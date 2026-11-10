@@ -31,7 +31,7 @@ Os arquivos de publicação ficam em `dist/ss-interiores/browser`.
 
 O workflow `.github/workflows/deploy.yml` compila e publica o site quando há um push para `main` (ou ao executar o workflow manualmente). Nas configurações do repositório, selecione **Settings → Pages → Build and deployment → Source → GitHub Actions**.
 
-O endereço esperado para o projeto é `https://ss-interiores.github.io/ssinteriores/`.
+O endereço esperado para o projeto é `https://ss-interiores.github.io/ss-interiores/`.
 
 ## Conteúdo a configurar
 
