@@ -1,20 +1,20 @@
 <main class="room-project" id="projeto">
   <div class="project-topline">
     <a class="back-to-projects" href="/#colecoes"><app-icon name="chevron-left" /> Voltar aos projetos</a>
-    <span>Residencial <span class="separator">/</span> Quarto infantil</span>
+    <span>Residencial <span class="separator">/</span> {{ project().category ?? 'Quarto infantil' }}</span>
   </div>
 
   <section class="room-hero" aria-labelledby="room-title">
     <div class="hero-editorial">
       <p class="overline"><span class="tiny-dot"></span> {{ project().kicker }}</p>
-      <h1 id="room-title">{{ project().firstName }}<br /><span class="name-second"><i>&</i> {{ project().secondName }}<span class="title-dot">.</span></span></h1>
+      <h1 id="room-title" [class.compact-title]="project().compactTitle">{{ project().firstName }}<br /><span class="name-second">@if (project().joiner !== '') {<i>{{ project().joiner ?? '&' }}</i> }{{ project().secondName }}<span class="title-dot">.</span></span></h1>
       <p class="hero-description">{{ project().lede[0] }}<br />{{ project().lede[1] }}</p>
       <p class="hero-body">{{ project().summary }}</p>
-      <div class="hero-tags"><span>Quarto compartilhado</span><span>Interiores residenciais</span></div>
+      <div class="hero-tags">@for (tag of project().tags ?? ['Quarto compartilhado', 'Interiores residenciais']; track tag) { <span>{{ tag }}</span> }</div>
     </div>
     <figure class="hero-figure">
-      <button type="button" (click)="openImage(0, $event)" aria-label="Ampliar vista geral do quarto">
-        <img [src]="image(gallery[0].view)" [alt]="gallery[0].alt" fetchpriority="high" width="1080" height="1080" />
+      <button type="button" (click)="openImage(0, $event)" aria-label="Ampliar imagem principal">
+        <img [src]="image(gallery[0].view)" [alt]="gallery[0].alt" fetchpriority="high" [attr.width]="project().imageWidth ?? 1080" [attr.height]="project().imageHeight ?? 1080" />
         <span class="image-expand"><app-icon name="maximize" /></span>
       </button>
       <figcaption><span>{{ project().name }}</span><span>{{ project().coverCaption }}</span></figcaption>
@@ -39,7 +39,7 @@
       @for (item of gallery; track item.view; let index = $index) {
         <figure [class.gallery-wide]="index === 0 || index === 5">
           <button type="button" (click)="openImage(index, $event)" [attr.aria-label]="'Ampliar: ' + item.title">
-            <img [src]="image(item.view)" [alt]="item.alt" loading="lazy" width="1080" height="1080" />
+            <img [src]="image(item.view)" [alt]="item.alt" loading="lazy" [attr.width]="project().imageWidth ?? 1080" [attr.height]="project().imageHeight ?? 1080" />
             <span class="image-expand"><app-icon name="maximize" /></span>
           </button>
           <figcaption><div><span class="image-number">0{{ index + 1 }}</span><span>{{ item.title }}</span></div><span class="image-detail">{{ item.detail }}</span></figcaption>
@@ -49,7 +49,7 @@
   </section>
 
   <section class="palette-section" id="cores" aria-labelledby="palette-title">
-    <div class="section-heading"><div><p class="overline">03 / Cores e sensações</p><h2 id="palette-title">Uma paleta que<br /><em>abraça a infância.</em></h2></div><p class="section-aside">{{ project().paletteDescription[0] }}<br />{{ project().paletteDescription[1] }}</p></div>
+    <div class="section-heading"><div><p class="overline">03 / Cores e sensações</p><h2 id="palette-title">{{ project().paletteTitle?.[0] ?? 'Uma paleta que' }}<br /><em>{{ project().paletteTitle?.[1] ?? 'abraça a infância.' }}</em></h2></div><p class="section-aside">{{ project().paletteDescription[0] }}<br />{{ project().paletteDescription[1] }}</p></div>
     <div class="palette-grid">
       @for (color of palette; track color.hex) {
         <article class="color-item"><div class="color-swatch" [style.background]="color.color"><span>{{ color.hex }}</span></div><h3>{{ color.name }}</h3><p>{{ color.use }}</p></article>
@@ -59,7 +59,7 @@
   </section>
 
   <section class="spec-section" id="especificacoes" aria-labelledby="spec-title">
-    <div class="section-heading"><div><p class="overline">04 / Materiais e detalhes</p><h2 id="spec-title">O cuidado mora<br /><em>nos detalhes.</em></h2></div><p class="section-aside">Os elementos que dão forma<br />à identidade do quarto.</p></div>
+    <div class="section-heading"><div><p class="overline">04 / Materiais e detalhes</p><h2 id="spec-title">O cuidado mora<br /><em>nos detalhes.</em></h2></div><p class="section-aside">Os elementos que dão forma<br />à identidade do ambiente.</p></div>
     <div class="spec-list">
       @for (spec of specs; track spec.number) {
         <article class="spec-row"><span class="spec-number">{{ spec.number }}</span><h3>{{ spec.name }}</h3><div><p class="spec-material">{{ spec.material }}</p><p class="spec-description">{{ spec.description }}</p></div></article>
@@ -71,6 +71,6 @@
   <div class="project-ending"><p>{{ project().closing[0] }}<br /><em>{{ project().closing[1] }}</em></p><a href="/#colecoes">Explore outros projetos</a></div>
 </main>
 
-<dialog #viewer class="image-viewer" [attr.aria-label]="'Galeria do quarto ' + project().name" (click)="backdrop($event)" (close)="restoreFocus()">
-  <div class="viewer-content"><div class="viewer-top"><span>{{ project().name }} <span class="viewer-counter">/ {{ selected() + 1 }} de {{ gallery.length }}</span></span><button type="button" autofocus aria-label="Fechar imagem" (click)="closeImage()"><app-icon name="close" /></button></div><div class="viewer-image"><button type="button" class="viewer-prev" aria-label="Imagem anterior" (click)="step(-1)"><app-icon name="chevron-left" /></button><img [src]="image(selectedImage().view)" [alt]="selectedImage().alt" width="1080" height="1080" /><button type="button" class="viewer-next" aria-label="Próxima imagem" (click)="step(1)"><app-icon name="chevron-right" /></button></div><div class="viewer-bottom"><span>{{ selectedImage().title }}</span></div></div>
+<dialog #viewer class="image-viewer" [attr.aria-label]="'Galeria do projeto ' + project().name" (click)="backdrop($event)" (close)="restoreFocus()">
+  <div class="viewer-content"><div class="viewer-top"><span>{{ project().name }} <span class="viewer-counter">/ {{ selected() + 1 }} de {{ gallery.length }}</span></span><button type="button" autofocus aria-label="Fechar imagem" (click)="closeImage()"><app-icon name="close" /></button></div><div class="viewer-image"><button type="button" class="viewer-prev" aria-label="Imagem anterior" (click)="step(-1)"><app-icon name="chevron-left" /></button><img [src]="image(selectedImage().view)" [alt]="selectedImage().alt" [attr.width]="project().imageWidth ?? 1080" [attr.height]="project().imageHeight ?? 1080" /><button type="button" class="viewer-next" aria-label="Próxima imagem" (click)="step(1)"><app-icon name="chevron-right" /></button></div><div class="viewer-bottom"><span>{{ selectedImage().title }}</span></div></div>
 </dialog>

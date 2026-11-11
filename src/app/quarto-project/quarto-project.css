@@ -11,6 +11,7 @@ button { font: inherit; cursor: pointer; }
 .tiny-dot { display: inline-block; width: 6px; height: 6px; margin: 0 9px 1px 0; border-radius: 50%; background: var(--room-green); }
 h1 { margin: 32px 0 22px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(53px, 6.6vw, 112px); font-weight: 400; letter-spacing: -.065em; line-height: .99; }
 .name-second { white-space: nowrap; }
+.compact-title { font-size: clamp(44px, 5.4vw, 84px); }
 h1 i { color: var(--room-green); font-weight: 400; }
 .title-dot { color: var(--room-rust); }
 .hero-description { margin: 27px 0 16px; font-size: clamp(16px, 1.5vw, 22px); line-height: 1.5; letter-spacing: -.025em; }
@@ -87,6 +88,7 @@ h2 em { color: var(--room-green); font-weight: 400; }
   .room-hero { grid-template-columns: 1fr; gap: 30px; padding: 18px 0 28px; }
   .hero-editorial { padding: 0; }
   h1 { margin: 25px 0 20px; font-size: clamp(56px, 12vw, 85px); }
+  h1.compact-title { font-size: clamp(40px, 10vw, 68px); }
   .hero-description { margin-top: 21px; font-size: 18px; }
   .hero-body { max-width: 410px; font-size: 12px; }
   .hero-tags { margin-top: 25px; }

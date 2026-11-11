@@ -15,6 +15,8 @@ O servidor de desenvolvimento fica em `http://localhost:4200` e atualiza a pági
 
 A página do quarto Antonio e Catarina fica em `/projetos/quarto-antonio-catarina`, também acessível pela seleção de projetos. Inclui oito renders, galeria ampliada com navegação pelas setas do teclado, paleta visual e descrição dos materiais. As cores são aproximações digitais dos renders; referências comerciais e medidas precisam do detalhamento executivo.
 
+As páginas de Gabi e Juju, sala de estar e jantar de Jéssica e Gabriel e cobertura gourmet de Jéssica e Gabriel usam a mesma apresentação com galeria, conceito, paleta e especificações. Cada uma contém seis renders locais. A área gourmet do Apê 401 mantém a apresentação resumida.
+
 ## Build
 
 ```bash
@@ -28,6 +30,8 @@ npm run build:pages
 ```
 
 Os arquivos de publicação ficam em `dist/ss-interiores/browser`.
+
+O comando `build:pages` também gera entradas HTML para as cinco rotas de projetos, permitindo abrir e atualizar seus endereços diretamente no GitHub Pages.
 
 ## Publicação
 

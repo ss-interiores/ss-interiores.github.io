@@ -3,6 +3,13 @@ export interface RoomProjectData {
   readonly firstName: string;
   readonly secondName: string;
   readonly name: string;
+  readonly joiner?: string;
+  readonly category?: string;
+  readonly tags?: readonly string[];
+  readonly compactTitle?: boolean;
+  readonly imageWidth?: number;
+  readonly imageHeight?: number;
+  readonly paletteTitle?: readonly [string, string];
   readonly kicker: string;
   readonly lede: readonly [string, string];
   readonly summary: string;

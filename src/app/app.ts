@@ -4,6 +4,7 @@ import { Icon } from './shared/icon';
 import { whatsappUrl } from './shared/contact';
 import { StudioLogo } from './shared/studio-logo';
 import { ROOM_PROJECTS } from './quarto-project/room-project-data';
+import { LIVING_PROJECTS } from './quarto-project/living-project-data';
 
 interface Collection {
   readonly slug: string;
@@ -32,7 +33,7 @@ interface ProjectImage {
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly roomProjects = ROOM_PROJECTS;
+  protected readonly roomProjects = { ...ROOM_PROJECTS, ...LIVING_PROJECTS };
   protected readonly menuOpen = signal(false);
   protected readonly activeProject = signal<Collection | null>(null);
   protected readonly whatsappHref = computed(() => whatsappUrl(this.activeProject()?.title));
@@ -67,28 +68,28 @@ export class App {
     {
       slug: 'sala-estar-jantar-jessica-gabriel',
       title: 'Sala de estar e jantar',
-      category: 'Estudo preliminar · Apartamento',
-      description: 'Estudo preliminar de sala de estar e jantar.',
-      detail: 'Estudo preliminar para Jéssica e Gabriel. O moodboard orienta a sala de estar e jantar por personalidade, leveza, tranquilidade e descanso.',
-      status: 'Estudo e moodboard',
+      category: 'Projeto de interiores · Apartamento',
+      description: 'Estar e jantar integrados para Jéssica e Gabriel.',
+      detail: 'Marcenaria sob a escada, canto de estar com adega e uma composição de tons suaves, madeira e detalhes pretos.',
+      status: 'Projeto com detalhamento',
       motif: 'sala',
-      image: 'images/projetos/projeto-sala-estar-jantar-estudo.png',
-      imageAlt: 'Render do estudo de sala de estar e jantar, com parede azul petróleo e mesa de jantar.',
-      crop: 'sala-right',
-      gallery: [{ image: 'images/projetos/projeto-sala-estar-jantar-estudo.png', alt: 'Render de uma sala de estar e jantar em estudo preliminar.', caption: 'Sala de estar e jantar · Estudo preliminar' }],
+      image: 'images/projetos/sala-estar-jantar-jessica-gabriel/vista-1.png',
+      imageAlt: 'Sala de estar e jantar de Jéssica e Gabriel com poltronas marrons, espelho orgânico e mesa de jantar.',
+      crop: 'local-render',
+      gallery: [],
     },
     {
       slug: 'cobertura-gourmet-jessica-gabriel',
       title: 'Cobertura gourmet',
-      category: 'Estudo preliminar · Apartamento',
-      description: 'Estudo de cobertura e área gourmet.',
-      detail: 'Estudo preliminar da cobertura e área gourmet para Jéssica e Gabriel. O moodboard parte de socialização, tranquilidade, distração e criatividade.',
-      status: 'Estudo e moodboard',
+      category: 'Projeto de interiores · Apartamento',
+      description: 'Uma cobertura para cozinhar, reunir e aproveitar.',
+      detail: 'Área gourmet de Jéssica e Gabriel com bancada em L, churrasqueira, madeira e esquadrias pretas.',
+      status: 'Projeto com detalhamento',
       motif: 'cobertura',
-      image: 'images/projetos/projeto-cobertura-gourmet-estudo.png',
-      imageAlt: 'Render de cobertura gourmet com churrasqueira, bancada e espaço externo.',
-      crop: 'cobertura-right',
-      gallery: [{ image: 'images/projetos/projeto-cobertura-gourmet-estudo.png', alt: 'Render de uma cobertura com área gourmet em estudo preliminar.', caption: 'Cobertura e área gourmet · Estudo preliminar' }],
+      image: 'images/projetos/cobertura-gourmet-jessica-gabriel/vista-1.png',
+      imageAlt: 'Cobertura gourmet de Jéssica e Gabriel com bancada em L, banquetas e armários amadeirados.',
+      crop: 'local-render',
+      gallery: [],
     },
     {
       slug: 'quarto-gabi-juju',
