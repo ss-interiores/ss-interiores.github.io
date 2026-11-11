@@ -45,6 +45,22 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
+.back-to-projects {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 0 13px 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 11px;
+  text-decoration: none;
+  transition: background .18s ease, border-color .18s ease;
+}
+.back-to-projects:hover { background: var(--sand); border-color: #c4c5b7; }
+
 img {
   display: block;
   max-width: 100%;

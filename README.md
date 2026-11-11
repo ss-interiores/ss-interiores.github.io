@@ -13,6 +13,8 @@ npm start
 
 O servidor de desenvolvimento fica em `http://localhost:4200` e atualiza a página ao salvar alterações.
 
+A página do quarto Antonio e Catarina fica em `/projetos/quarto-antonio-catarina`, também acessível pela seleção de projetos. Inclui oito renders, galeria ampliada com navegação pelas setas do teclado, paleta visual e descrição dos materiais. As cores são aproximações digitais dos renders; referências comerciais e medidas precisam do detalhamento executivo.
+
 ## Build
 
 ```bash

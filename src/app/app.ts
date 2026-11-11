@@ -1,65 +1,142 @@
-import { Component, signal } from '@angular/core';
+import { Component, HostListener, computed, effect, signal } from '@angular/core';
+import { QuartoProject } from './quarto-project/quarto-project';
+import { Icon } from './shared/icon';
+import { whatsappUrl } from './shared/contact';
+import { StudioLogo } from './shared/studio-logo';
+import { ROOM_PROJECTS } from './quarto-project/room-project-data';
 
 interface Collection {
+  readonly slug: string;
   readonly title: string;
   readonly category: string;
+  readonly description: string;
+  readonly detail: string;
+  readonly status: string;
+  readonly motif: string;
+  readonly image: string;
+  readonly imageAlt: string;
+  readonly crop: string;
+  readonly gallery: readonly ProjectImage[];
+}
+
+interface ProjectImage {
   readonly image: string;
   readonly alt: string;
-  readonly tall: boolean;
+  readonly caption: string;
 }
 
 @Component({
   selector: 'app-root',
+  imports: [QuartoProject, Icon, StudioLogo],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
+  protected readonly roomProjects = ROOM_PROJECTS;
   protected readonly menuOpen = signal(false);
+  protected readonly activeProject = signal<Collection | null>(null);
+  protected readonly whatsappHref = computed(() => whatsappUrl(this.activeProject()?.title));
 
   protected readonly collections: readonly Collection[] = [
     {
-      title: 'Living',
-      category: 'Viver e receber',
-      image: 'images/hero.jpg',
-      alt: 'Sala contemporânea com sofá de couro, poltronas e luz natural',
-      tall: true,
+      slug: 'quarto-antonio-catarina',
+      title: 'Antonio e Catarina',
+      category: 'Quarto infantil compartilhado',
+      description: 'Um quarto para crescer, brincar e sonhar juntos.',
+      detail: 'Madeira clara, verde suave e pequenos toques de terracota em um espaço pensado para duas infâncias.',
+      status: 'Projeto de interiores',
+      motif: 'infantil',
+      image: 'images/projetos/quarto-antonio-catarina/vista-6.png',
+      imageAlt: 'Quarto de Antonio e Catarina com beliche de madeira clara, painel verde e prateleiras de livros.',
+      crop: 'antonio-catarina',
+      gallery: [],
     },
     {
-      title: 'Arquitetura',
-      category: 'Linhas e matéria',
-      image: 'images/architecture.jpg',
-      alt: 'Casa contemporânea com madeira natural, vidro e jardim',
-      tall: false,
+      slug: 'area-gourmet-apto-401',
+      title: 'Área gourmet',
+      category: 'Reforma residencial',
+      description: 'Reforma de interiores com foco na área gourmet.',
+      detail: 'Projeto de reforma de uma área gourmet em apartamento. O acervo do estúdio registra o espaço em quatro pranchas.',
+      status: 'Reforma de interiores',
+      motif: 'gourmet',
+      image: 'images/projetos/projeto-area-gourmet-reforma.png',
+      imageAlt: 'Render de reforma de área gourmet com mesa de jogos e bancada externa.',
+      crop: 'gourmet-left',
+      gallery: [{ image: 'images/projetos/projeto-area-gourmet-reforma.png', alt: 'Render de uma área gourmet residencial, com mesa de jogos e bancada.', caption: 'Área gourmet · Reforma residencial' }],
     },
     {
-      title: 'Estar',
-      category: 'Conforto essencial',
-      image: 'images/living-room.jpg',
-      alt: 'Sala integrada com sofá claro, mesa baixa e parede em madeira',
-      tall: true,
+      slug: 'sala-estar-jantar-jessica-gabriel',
+      title: 'Sala de estar e jantar',
+      category: 'Estudo preliminar · Apartamento',
+      description: 'Estudo preliminar de sala de estar e jantar.',
+      detail: 'Estudo preliminar para Jéssica e Gabriel. O moodboard orienta a sala de estar e jantar por personalidade, leveza, tranquilidade e descanso.',
+      status: 'Estudo e moodboard',
+      motif: 'sala',
+      image: 'images/projetos/projeto-sala-estar-jantar-estudo.png',
+      imageAlt: 'Render do estudo de sala de estar e jantar, com parede azul petróleo e mesa de jantar.',
+      crop: 'sala-right',
+      gallery: [{ image: 'images/projetos/projeto-sala-estar-jantar-estudo.png', alt: 'Render de uma sala de estar e jantar em estudo preliminar.', caption: 'Sala de estar e jantar · Estudo preliminar' }],
     },
     {
-      title: 'Dormitório',
-      category: 'Um lugar para desacelerar',
-      image: 'images/bedroom.jpg',
-      alt: 'Quarto claro com cama em tons naturais e janela ampla',
-      tall: true,
+      slug: 'cobertura-gourmet-jessica-gabriel',
+      title: 'Cobertura gourmet',
+      category: 'Estudo preliminar · Apartamento',
+      description: 'Estudo de cobertura e área gourmet.',
+      detail: 'Estudo preliminar da cobertura e área gourmet para Jéssica e Gabriel. O moodboard parte de socialização, tranquilidade, distração e criatividade.',
+      status: 'Estudo e moodboard',
+      motif: 'cobertura',
+      image: 'images/projetos/projeto-cobertura-gourmet-estudo.png',
+      imageAlt: 'Render de cobertura gourmet com churrasqueira, bancada e espaço externo.',
+      crop: 'cobertura-right',
+      gallery: [{ image: 'images/projetos/projeto-cobertura-gourmet-estudo.png', alt: 'Render de uma cobertura com área gourmet em estudo preliminar.', caption: 'Cobertura e área gourmet · Estudo preliminar' }],
     },
     {
-      title: 'Integração',
-      category: 'Espaço para compartilhar',
-      image: 'images/lounge.jpg',
-      alt: 'Ambiente social contemporâneo com sala e cozinha integradas',
-      tall: false,
-    },
-    {
-      title: 'Detalhes',
-      category: 'A beleza do cotidiano',
-      image: 'images/armchair.jpg',
-      alt: 'Poltronas em madeira e couro em uma sala acolhedora',
-      tall: true,
+      slug: 'quarto-gabi-juju',
+      title: 'Gabi e Juju',
+      category: 'Projeto de interiores',
+      description: 'Um jardim para duas infâncias, com espaço para estudar, brincar e sonhar.',
+      detail: 'Quarto compartilhado com beliche sob medida, bancada de estudos para duas, papel de parede Jardim Provence e detalhes em palha indiana.',
+      status: 'Projeto de interiores',
+      motif: 'quarto',
+      image: 'images/projetos/quarto-gabi-juju/vista-3.png',
+      imageAlt: 'Render de quarto infantil em tons de rosa, com bancada de estudos e espelhos redondos.',
+      crop: 'gabi-juju',
+      gallery: [{ image: 'images/projetos/projeto-quarto-infantil.png', alt: 'Render de quarto infantil com bancada de estudos, espelhos e papel de parede floral.', caption: 'Quarto infantil · Projeto de interiores' }],
     },
   ];
+
+  constructor() {
+    this.syncProjectFromPath();
+    effect(() => {
+      const project = this.activeProject();
+      document.title = project ? `${project.title} — SS Interiores` : 'SS Interiores — Espaços para a vida acontecer';
+    });
+  }
+
+  @HostListener('window:popstate')
+  protected syncProjectFromPath(): void {
+    this.activeProject.set(this.projectFromPath(window.location.pathname));
+  }
+
+  protected openProject(event: MouseEvent, project: Collection): void {
+    event.preventDefault();
+    window.history.pushState({}, '', `/projetos/${project.slug}`);
+    this.activeProject.set(project);
+    this.menuOpen.set(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  protected backToProjects(event: MouseEvent): void {
+    event.preventDefault();
+    window.history.pushState({}, '', '/#colecoes');
+    this.activeProject.set(null);
+    window.setTimeout(() => document.getElementById('colecoes')?.scrollIntoView({ behavior: 'smooth' }), 0);
+  }
+
+  private projectFromPath(path: string): Collection | null {
+    const slug = path.match(/^\/projetos\/([^/]+)\/?$/)?.[1];
+    return this.collections.find((project) => project.slug === slug) ?? null;
+  }
 
   protected toggleMenu(): void {
     this.menuOpen.update((isOpen) => !isOpen);

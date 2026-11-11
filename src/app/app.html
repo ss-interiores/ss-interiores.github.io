@@ -1,8 +1,7 @@
 <div class="site-shell" id="inicio">
   <header class="site-header" [class.menu-open]="menuOpen()">
-    <a class="brand" href="#inicio" aria-label="SS Interiores, início" (click)="closeMenu()">
-      <span class="brand-mark">SS</span>
-      <span class="brand-name">INTERIORES</span>
+    <a class="brand" [attr.href]="activeProject() ? '/' : '#inicio'" aria-label="SS Interiores, início" (click)="closeMenu()">
+      <app-studio-logo />
     </a>
 
     <button
@@ -18,29 +17,71 @@
     </button>
 
     <nav id="primary-navigation" class="primary-navigation" [class.is-open]="menuOpen()" aria-label="Navegação principal">
-      <a href="#ambientes" (click)="closeMenu()">Ambientes</a>
-      <a href="#sobre" (click)="closeMenu()">Estúdio</a>
-      <a href="#colecoes" (click)="closeMenu()">Projetos</a>
-      <a href="#contato" class="mobile-contact" (click)="closeMenu()">Contato <span aria-hidden="true">↗</span></a>
+      <a [attr.href]="activeProject() ? '/#ambientes' : '#ambientes'" (click)="closeMenu()">Ambientes</a>
+      <a [attr.href]="activeProject() ? '/#sobre' : '#sobre'" (click)="closeMenu()">Estúdio</a>
+      <a [attr.href]="activeProject() ? '/#colecoes' : '#colecoes'" (click)="closeMenu()">Projetos</a>
+      <a [href]="whatsappHref()" class="mobile-contact" target="_blank" rel="noreferrer" (click)="closeMenu()">Contato</a>
     </nav>
 
-    <a class="header-contact" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+    <a class="header-contact" [href]="whatsappHref()" target="_blank" rel="noreferrer">Vamos conversar</a>
   </header>
 
+  @if (activeProject(); as project) {
+    @if (roomProjects[project.slug]; as room) {
+      <app-quarto-project [project]="room" />
+    } @else {
+    <main class="project-page">
+      <div class="project-page-toolbar">
+        <a href="/#colecoes" class="back-to-projects" (click)="backToProjects($event)"><app-icon name="chevron-left" /> Voltar aos projetos</a>
+        <span class="project-page-counter">Portfólio SS Interiores</span>
+      </div>
+
+      <section class="project-detail-hero" aria-labelledby="project-detail-title">
+        <figure class="project-detail-cover">
+          <img [src]="project.image" [alt]="project.imageAlt" />
+        </figure>
+        <div class="project-detail-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> {{ project.category }}</p>
+          <h1 id="project-detail-title">{{ project.title }}<em>.</em></h1>
+          <p class="project-detail-lede">{{ project.description }}</p>
+          <p class="project-detail-summary">{{ project.detail }}</p>
+          <a class="dark-button" [href]="whatsappHref()" target="_blank" rel="noreferrer">Converse com o estúdio</a>
+        </div>
+      </section>
+
+      <section class="project-gallery-section" aria-labelledby="project-gallery-title">
+        <div class="project-gallery-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Do acervo do estúdio</p>
+            <h2 id="project-gallery-title">Imagens do<br /><em>projeto.</em></h2>
+          </div>
+          <p class="body-copy">Imagens e informações do acervo do estúdio.</p>
+        </div>
+        <div class="project-gallery-grid" [class.single-image]="project.gallery.length === 1">
+          @for (image of project.gallery; track image.image) {
+            <figure class="project-gallery-image">
+              <img [src]="image.image" [alt]="image.alt" />
+              <figcaption>{{ image.caption }}</figcaption>
+            </figure>
+          }
+        </div>
+      </section>
+
+      <nav class="project-neighbors" aria-label="Navegar entre projetos">
+        <a href="/#colecoes" class="dark-button" (click)="backToProjects($event)">Ver outros projetos</a>
+        <a [href]="whatsappHref()" target="_blank" rel="noreferrer" class="text-link">Vamos conversar</a>
+      </nav>
+    </main>
+    }
+  } @else {
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <img
-        class="hero-image"
-        src="images/hero.jpg"
-        alt="Sala de estar contemporânea com mobiliário natural e luz abundante"
-        fetchpriority="high"
-        width="2000"
-        height="1500"
-      />
-      <div class="hero-shade"></div>
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/projetos/projeto-cobertura-gourmet-estudo.png" alt="" />
+      </div>
       <div class="hero-topline">
         <p class="eyebrow light-eyebrow"><span class="eyebrow-dot"></span> Interiores com intenção</p>
-        <p class="hero-index">São Paulo, Brasil <span>·</span> 01 — 04</p>
+        <p class="hero-index">Studio Simões Scatrut</p>
       </div>
 
       <div class="hero-copy">
@@ -48,50 +89,23 @@
         <h1 id="hero-title">O essencial,<br /><em>bem vivido.</em></h1>
         <div class="hero-bottomline">
           <p>Interiores que acolhem histórias e<br class="desktop-break" /> acompanham a vida de perto.</p>
-          <a class="round-link hero-round-link" href="#ambientes" aria-label="Conheça nossos ambientes">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7" /></svg>
-          </a>
         </div>
       </div>
 
-      <div class="hero-seal" aria-label="Feito para a vida real">
-        <span>feito para a vida real · feito para a vida real ·</span>
-        <b aria-hidden="true">SS</b>
-      </div>
       <a class="hero-scroll" href="#ambientes"><span></span> role para explorar</a>
     </section>
 
     <section class="intro-section section-space" id="ambientes" aria-labelledby="intro-title">
-      <div class="intro-image-wrap">
-        <img
-          src="images/living-room.jpg"
-          alt="Living integrado com madeira natural, sofá claro e grandes aberturas"
-          loading="lazy"
-          width="2000"
-          height="1360"
-        />
-        <span class="image-note">Texturas naturais, luz tranquila.</span>
+      <div class="intro-card">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Um jeito de morar</p>
+        <h2 id="intro-title">Criando espaços<br /><em>únicos e cheios de afeto.</em></h2>
+        <p class="body-copy">Porque o nosso lar é a extensão daquilo que nós somos. Cada projeto parte da identidade, das necessidades e dos desejos de quem vive ali.</p>
+        <a class="text-link" href="#sobre">Conheça o estúdio <app-icon name="chevron-right" /></a>
       </div>
-      <div class="intro-aside">
-        <div class="intro-card">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Um jeito de morar</p>
-          <h2 id="intro-title">Beleza que<br /><em>faz sentido.</em></h2>
-          <p class="body-copy">Projetamos espaços para serem sentidos. Cada escolha parte de uma escuta atenta, encontra seu lugar na rotina e ganha forma com cuidado.</p>
-          <a class="text-link" href="#sobre">Conheça o estúdio <span aria-hidden="true">↗</span></a>
-        </div>
-        <a class="intro-tile" href="#colecoes" aria-label="Explore os projetos da SS Interiores">
-          <img
-            src="images/armchair.jpg"
-            alt="Sala acolhedora com mobiliário de madeira, couro e luz natural"
-            loading="lazy"
-            width="2000"
-            height="1333"
-          />
-          <span class="tile-overlay"></span>
-          <span class="tile-label"><span>Uma casa com identidade</span><b>Explore os projetos <span aria-hidden="true">↗</span></b></span>
-          <span class="tile-arrow" aria-hidden="true">↗</span>
-        </a>
-      </div>
+      <figure class="project-image intro-image" aria-label="Render do projeto de sala de estar e jantar">
+        <img src="images/projetos/projeto-sala-estar-jantar-estudo.png" alt="Render de um estudo preliminar de sala de estar e jantar." />
+        <figcaption>Estudo preliminar · Sala de estar e jantar</figcaption>
+      </figure>
     </section>
 
     <section class="principles" aria-label="Princípios do estúdio">
@@ -114,51 +128,51 @@
     </section>
 
     <section class="studio-section section-space" id="sobre" aria-labelledby="studio-title">
-      <div class="studio-image-wrap">
-        <img
-          src="images/lounge.jpg"
-          alt="Ambiente integrado com cozinha, sala e materiais de tons naturais"
-          loading="lazy"
-          width="2000"
-          height="1333"
-        />
-        <span class="studio-image-caption">Espaços para estar, pertencer e permanecer.</span>
-      </div>
       <div class="studio-copy">
         <p class="eyebrow"><span class="eyebrow-dot"></span> Essência · Afeto · Permanência</p>
-        <h2 id="studio-title">Forma e função,<br /><em>em harmonia.</em></h2>
-        <p class="body-copy">Acreditamos que um bom projeto se revela nos encontros: entre luz e matéria, beleza e conforto, o que imaginamos e o que vivemos. Criamos interiores com personalidade e propósito.</p>
-        <a class="dark-button" href="#contato">Conte sua ideia <span aria-hidden="true">↗</span></a>
+        <h2 id="studio-title">Um lar que<br /><em>conta quem somos.</em></h2>
+        <p class="body-copy">Somos Gabriela Simões e Maria Clara Scatrut, designers de interiores. Criamos projetos exclusivos que unem beleza e funcionalidade e traduzem a identidade de cada família.</p>
+        <a class="dark-button" [href]="whatsappHref()" target="_blank" rel="noreferrer">Conte sua ideia</a>
       </div>
+      <figure class="project-image studio-image" aria-label="Render de projeto de quarto infantil">
+        <img src="images/projetos/quarto-gabi-juju/vista-2.png" alt="Render do quarto Gabi e Juju com bancada para duas, espelhos redondos e papel de parede floral." />
+        <figcaption>Projeto de interiores · Gabi e Juju</figcaption>
+      </figure>
     </section>
 
     <section class="collection-section section-space" id="colecoes" aria-labelledby="collection-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Espaços com história</p>
-          <h2 id="collection-title">Um olhar para<br /><em>cada ambiente.</em></h2>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Projetos do estúdio</p>
+          <h2 id="collection-title">Interiores<br /><em>com identidade.</em></h2>
         </div>
         <div class="section-heading-aside">
-          <p class="body-copy">Projetos que respeitam a arquitetura e fazem espaço para o que realmente importa: as pessoas que vivem ali.</p>
-          <a class="text-link" href="#contato">Todos os projetos <span aria-hidden="true">↗</span></a>
+          <p class="body-copy">Uma seleção de reformas, estudos preliminares e projetos de interiores registrados no acervo do estúdio.</p>
+          <a class="text-link" [href]="whatsappHref()" target="_blank" rel="noreferrer">Vamos conversar</a>
         </div>
       </div>
 
       <div class="collection-grid">
         @for (collection of collections; track collection.title) {
-          <a class="collection-card" [class.is-tall]="collection.tall" href="#contato" [attr.aria-label]="'Converse com a gente sobre ' + collection.title">
-            <img [src]="collection.image" [alt]="collection.alt" loading="lazy" width="2000" height="1333" />
-            <span class="collection-shade"></span>
-            <span class="collection-caption">
-              <span class="collection-category">{{ collection.category }}</span>
-              <span class="collection-title">{{ collection.title }}</span>
+          <a class="collection-card" [attr.data-motif]="collection.motif" [attr.href]="'/projetos/' + collection.slug" (click)="openProject($event, collection)">
+            <span class="collection-summary">
+              <span [class]="'collection-photo ' + collection.crop">
+                <img [src]="collection.image" [alt]="collection.imageAlt" />
+              </span>
+              <span class="collection-caption">
+                <span class="collection-category">{{ collection.category }}</span>
+                <span class="collection-title">{{ collection.title }}</span>
+                <span class="collection-description">{{ collection.description }}</span>
+                <span class="collection-status">{{ collection.status }}</span>
+              </span>
+              <span class="collection-toggle"><app-icon name="chevron-right" /></span>
             </span>
-            <span class="collection-arrow" aria-hidden="true">↗</span>
           </a>
         }
       </div>
     </section>
   </main>
+  }
 
   <footer class="site-footer" id="contato">
     <div class="footer-main">
@@ -166,20 +180,10 @@
         <p class="eyebrow light-eyebrow"><span class="eyebrow-dot"></span> O próximo capítulo começa aqui</p>
         <h2>Vamos criar<br /><em>algo com alma?</em></h2>
         <p>Conte um pouco sobre o espaço que você imagina.<br class="desktop-break" /> A gente começa pela conversa.</p>
-        <a class="light-button" href="mailto:contato@ssinteriores.com.br?subject=Vamos%20conversar%20sobre%20meu%20projeto">
+        <a class="light-button" [href]="whatsappHref()" target="_blank" rel="noreferrer">
           Inicie uma conversa
-          <span class="button-arrow" aria-hidden="true">↗</span>
+
         </a>
-      </div>
-      <div class="footer-image-wrap">
-        <img
-          src="images/details.jpg"
-          alt="Detalhe de um espaço de estar com luz natural e mobiliário contemporâneo"
-          loading="lazy"
-          width="2000"
-          height="1333"
-        />
-        <span>SS Interiores — São Paulo, SP</span>
       </div>
     </div>
 
@@ -193,20 +197,17 @@
         </div>
         <div>
           <span class="footer-label">Converse</span>
-          <a href="mailto:contato@ssinteriores.com.br">E-mail</a>
-          <a href="#inicio">Voltar ao início ↑</a>
-        </div>
-        <div>
-          <span class="footer-label">Acompanhe</span>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
-          <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer">Pinterest ↗</a>
+          <a [href]="whatsappHref()" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a href="https://www.instagram.com/studiossinteriores/" target="_blank" rel="noreferrer">Instagram</a>
         </div>
       </div>
       <div class="footer-signature">
         <p>Interiores pensados<br />para a vida acontecer.</p>
-        <a class="footer-logo" href="#inicio" aria-label="SS Interiores, voltar ao início">SS<span>.</span></a>
+        <a class="footer-logo" href="#inicio" aria-label="SS Interiores, voltar ao início">
+          <app-studio-logo [light]="true" />
+        </a>
       </div>
     </div>
-    <div class="legal-line"><span>© 2026 SS Interiores</span><span>Feito com intenção, em São Paulo.</span></div>
+    <div class="legal-line"><span>© 2026 SS Interiores</span></div>
   </footer>
 </div>
