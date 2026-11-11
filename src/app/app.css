@@ -2,15 +2,6 @@
   display: block;
 }
 
-.collection-photo.antonio-catarina img,
-.collection-photo.gabi-juju img,
-.collection-photo.local-render img {
-  width: 100%;
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-}
-
 .site-shell {
   --page-inset: clamp(22px, 4.15vw, 68px);
   --radius-panel: 24px;
@@ -577,31 +568,20 @@
 
 .collection-photo img {
   position: absolute;
-  top: -21%;
+  inset: 0;
   display: block;
-  width: 220%;
+  width: 100%;
   max-width: none;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .collection-photo.gourmet-left img {
   top: -110%;
   left: -46%;
   width: 320%;
-}
-
-.collection-photo.sala-right img {
-  left: -111%;
-}
-
-.collection-photo.cobertura-right img {
-  left: -111%;
-}
-
-.collection-photo.quarto-center img {
-  top: -115%;
-  left: -158%;
-  width: 333%;
+  height: auto;
 }
 
 .collection-card:hover {
@@ -881,7 +861,7 @@
 .footer-main {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  padding-bottom: clamp(72px, 9vw, 124px);
+  padding-bottom: clamp(32px, 4vw, 48px);
 }
 
 .footer-invitation h2 {
@@ -1254,10 +1234,6 @@
     margin-top: 20px;
   }
 
-  .collection-photo.quarto-center img {
-    left: -158%;
-  }
-
   .studio-copy .body-copy {
     margin-top: 20px;
   }
@@ -1302,7 +1278,7 @@
   .footer-main {
     grid-template-columns: 1fr;
     gap: 36px;
-    padding-bottom: 58px;
+    padding-bottom: 32px;
   }
 
   .footer-invitation h2 {

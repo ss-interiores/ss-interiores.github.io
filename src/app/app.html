@@ -17,9 +17,8 @@
     </button>
 
     <nav id="primary-navigation" class="primary-navigation" [class.is-open]="menuOpen()" aria-label="Navegação principal">
-      <a [attr.href]="activeProject() ? '/#ambientes' : '#ambientes'" (click)="closeMenu()">Ambientes</a>
-      <a [attr.href]="activeProject() ? '/#sobre' : '#sobre'" (click)="closeMenu()">Estúdio</a>
       <a [attr.href]="activeProject() ? '/#colecoes' : '#colecoes'" (click)="closeMenu()">Projetos</a>
+      <a [attr.href]="activeProject() ? '/#sobre' : '#sobre'" (click)="closeMenu()">Sobre o estúdio</a>
       <a [href]="whatsappHref()" class="mobile-contact" target="_blank" rel="noreferrer" (click)="closeMenu()">Contato</a>
     </nav>
 
@@ -191,9 +190,8 @@
       <div class="footer-links">
         <div>
           <span class="footer-label">Explore</span>
-          <a href="#ambientes">Ambientes</a>
-          <a href="#sobre">O estúdio</a>
-          <a href="#colecoes">Projetos</a>
+          <a [attr.href]="activeProject() ? '/#colecoes' : '#colecoes'">Projetos</a>
+          <a [attr.href]="activeProject() ? '/#sobre' : '#sobre'">Sobre o estúdio</a>
         </div>
         <div>
           <span class="footer-label">Converse</span>

@@ -2,7 +2,7 @@
 
 ## Identidade visual
 
-Os logos em `public/images/simoes-scatrut-logo.svg` e `simoes-scatrut-logo-light.svg` derivam do SVG oficial exportado do Canva e fornecido em `projetos/Marca — logo oficial — Simões Scatrut (1).svg`. A versão para fundo escuro usa letras claras e ajuste de luminosidade no símbolo. Os traçados das letras foram preservados; o export mantém imagens incorporadas no símbolo.
+Os logos em `public/images/simoes-scatrut-logo.svg` e `simoes-scatrut-logo-light.svg` derivam do SVG oficial exportado do Canva e fornecido em `projetos/Marca — logo oficial — Simões Scatrut (1).svg`. A versão para fundo escuro usa letras claras e ajuste de luminosidade no símbolo. Os traçados das letras foram preservados; o símbolo mantém os pixels do export em um PNG incorporado com transparência. A máscara e os filtros foram aplicados previamente aos pixels para evitar falhas no contorno ao reduzir o SVG no Zen/Firefox, sem depender desses efeitos durante a renderização no navegador.
 
 A casinha original isolada está em `projetos/casinha-simoes-scatrut.svg`, a partir da outra página do SVG fornecido. As margens externas e o fundo branco foram removidos para uso transparente.
 
