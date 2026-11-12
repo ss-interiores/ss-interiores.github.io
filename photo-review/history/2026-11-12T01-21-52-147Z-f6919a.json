@@ -1,0 +1,822 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-11-12T01-21-52-147Z-f6919a",
+  "createdAt": "2026-11-12T01:21:52.148Z",
+  "generationMode": "built-in-imagegen",
+  "publicationStatus": "prepared",
+  "authorization": {
+    "source": "explicit-user-chat",
+    "statement": "ok, commit e push em todas as imagens, atualizando no site",
+    "recordedAt": "2026-11-12T01:21:51.534Z",
+    "scope": "All 29 latest inspected versions, site integration, commit and push to main and GitHub Pages deployment.",
+    "decisions": [
+      {
+        "id": "IMG-01",
+        "version": 2,
+        "hash": "88102977c693891144457d8d33a6891d56220692093814b81e14166fc30364eb",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-02",
+        "version": 2,
+        "hash": "9cae38255b878d8341c6123d8d0dd65331dc08fe6bff0ccccfd80c6103486bc2",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-03",
+        "version": 2,
+        "hash": "e0c0fc2956b15ecc307e0a7b5a5affa25a2ff9ce811ab127575107bb3bb6201d",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-04",
+        "version": 3,
+        "hash": "395b09a0c51275b16d292599676cd5c063a988eda022c0a4044142895427078f",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-05",
+        "version": 1,
+        "hash": "68991d37d1d3db6829f6e5daf8605630aa17743e70c539339a62fec099db93e2",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-06",
+        "version": 3,
+        "hash": "32a17819758943cd3a1a9c91e2d4b4bf4e5066bd9c857084df340be04db464ad",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-07",
+        "version": 3,
+        "hash": "9675963bb958a7339af3fd6f3861a894148ef17598631c63382a0276559333f9",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-08",
+        "version": 1,
+        "hash": "79eb260662b73385d6c6df83b55b758394571a44e3c68502ec19efbdfbbd9c85",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-09",
+        "version": 3,
+        "hash": "5ce6bc13922c6949d0ff7a3af2dbe27db8ee85d8c76beed48c6b6d0847e48a80",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-10",
+        "version": 2,
+        "hash": "b3c6db587b38b522d7f209ba00b14fd58bf034b346f3627d551f910ddcf40a7e",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-11",
+        "version": 2,
+        "hash": "9573aeeec21ce2592bec91bf5a103aaf02b6398fd665fdc970b30fd996fabc7d",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-12",
+        "version": 1,
+        "hash": "9d360fb55cff83a91e9ba6882393d04019d8d49417127c2135f0369f8dc031f4",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-13",
+        "version": 1,
+        "hash": "ad298bf7e163c86c359cc99b187df5077c8b384f6367ddf62ccda2d3727a3d0b",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-14",
+        "version": 1,
+        "hash": "b35ffcb2205a7287dbaaa3548b40f71f7e86afa9fafea365cbbf7e6152f8a139",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-15",
+        "version": 1,
+        "hash": "003215ba7cbae72a16ae51ac6efdd8c5576d6df82286413a334cc927487d3a39",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-16",
+        "version": 3,
+        "hash": "fe54b5748cf51da688e7d5657d566c504fb3ee6a395e2381d5596b30803b44e8",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-17",
+        "version": 2,
+        "hash": "d9b7ea14f630d72dd16c752882f5f6e5e799de33f86f3f6c57693cd3ef7026d5",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-18",
+        "version": 1,
+        "hash": "ae5d84714bd6590eb4b4d60d9abb19929d8135b092b3a3be74cdb7d3ee67d76d",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-19",
+        "version": 1,
+        "hash": "0d8f27525077b002b1d85f51eb606c0bd9054f2738a85a8754dc1abf9d37ba49",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-20",
+        "version": 1,
+        "hash": "682a885dc6c15b83f636d2e0e3b4bc528edafd932726dff582f478cf6e32755c",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-21",
+        "version": 3,
+        "hash": "0ac460b1313563d9696fcfcdc99b8803b65a15c271a717acd7d52e9d2b3b4fa9",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-22",
+        "version": 4,
+        "hash": "afebe8b43b115a35540194e1a4be9e854ed66d159a8e4a4e1fb719ab9b554edf",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-23",
+        "version": 3,
+        "hash": "4faed234921ec069a16fff0896ba4424f58baa495e858f42a199d85884a8edb4",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-24",
+        "version": 6,
+        "hash": "bd67b26d867d2bc8e038009ab6680476384950e0ab16684294a593fef3ee14f6",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-25",
+        "version": 2,
+        "hash": "88a0629ccebe95a3c65510e417b237d2084b0fee9df34f032674594190b0dde3",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-26",
+        "version": 4,
+        "hash": "1db6f22d7e8320af0cfc1a74a967d78d13b38f96c4e0bdfa0dc501044997a2e2",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-27A",
+        "version": 3,
+        "hash": "bd0082124aa39bb2df59c9f95f8269914eff0841e2221b7d277426580e2c82fc",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-27B",
+        "version": 4,
+        "hash": "a90fb649e9a11a4a1752c8a9b6ed50751876d3ce1ee7c8b47e94c312a529a71a",
+        "decision": "approve",
+        "feedback": ""
+      },
+      {
+        "id": "IMG-27C",
+        "version": 1,
+        "hash": "959113c312fe30b80532cb2e278e52e38228576ac1f89d6d8bf99f7ad7b81d8b",
+        "decision": "approve",
+        "feedback": ""
+      }
+    ],
+    "executionPreference": "sem verificar, só commit e push, eu valido"
+  },
+  "validation": "Additional checks skipped at the user’s explicit request; user will validate.",
+  "decisions": [
+    {
+      "id": "IMG-01",
+      "version": 2,
+      "hash": "88102977c693891144457d8d33a6891d56220692093814b81e14166fc30364eb",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-02",
+      "version": 2,
+      "hash": "9cae38255b878d8341c6123d8d0dd65331dc08fe6bff0ccccfd80c6103486bc2",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-03",
+      "version": 2,
+      "hash": "e0c0fc2956b15ecc307e0a7b5a5affa25a2ff9ce811ab127575107bb3bb6201d",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-04",
+      "version": 3,
+      "hash": "395b09a0c51275b16d292599676cd5c063a988eda022c0a4044142895427078f",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-05",
+      "version": 1,
+      "hash": "68991d37d1d3db6829f6e5daf8605630aa17743e70c539339a62fec099db93e2",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-06",
+      "version": 3,
+      "hash": "32a17819758943cd3a1a9c91e2d4b4bf4e5066bd9c857084df340be04db464ad",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-07",
+      "version": 3,
+      "hash": "9675963bb958a7339af3fd6f3861a894148ef17598631c63382a0276559333f9",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-08",
+      "version": 1,
+      "hash": "79eb260662b73385d6c6df83b55b758394571a44e3c68502ec19efbdfbbd9c85",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-09",
+      "version": 3,
+      "hash": "5ce6bc13922c6949d0ff7a3af2dbe27db8ee85d8c76beed48c6b6d0847e48a80",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-10",
+      "version": 2,
+      "hash": "b3c6db587b38b522d7f209ba00b14fd58bf034b346f3627d551f910ddcf40a7e",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-11",
+      "version": 2,
+      "hash": "9573aeeec21ce2592bec91bf5a103aaf02b6398fd665fdc970b30fd996fabc7d",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-12",
+      "version": 1,
+      "hash": "9d360fb55cff83a91e9ba6882393d04019d8d49417127c2135f0369f8dc031f4",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-13",
+      "version": 1,
+      "hash": "ad298bf7e163c86c359cc99b187df5077c8b384f6367ddf62ccda2d3727a3d0b",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-14",
+      "version": 1,
+      "hash": "b35ffcb2205a7287dbaaa3548b40f71f7e86afa9fafea365cbbf7e6152f8a139",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-15",
+      "version": 1,
+      "hash": "003215ba7cbae72a16ae51ac6efdd8c5576d6df82286413a334cc927487d3a39",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-16",
+      "version": 3,
+      "hash": "fe54b5748cf51da688e7d5657d566c504fb3ee6a395e2381d5596b30803b44e8",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-17",
+      "version": 2,
+      "hash": "d9b7ea14f630d72dd16c752882f5f6e5e799de33f86f3f6c57693cd3ef7026d5",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-18",
+      "version": 1,
+      "hash": "ae5d84714bd6590eb4b4d60d9abb19929d8135b092b3a3be74cdb7d3ee67d76d",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-19",
+      "version": 1,
+      "hash": "0d8f27525077b002b1d85f51eb606c0bd9054f2738a85a8754dc1abf9d37ba49",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-20",
+      "version": 1,
+      "hash": "682a885dc6c15b83f636d2e0e3b4bc528edafd932726dff582f478cf6e32755c",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-21",
+      "version": 3,
+      "hash": "0ac460b1313563d9696fcfcdc99b8803b65a15c271a717acd7d52e9d2b3b4fa9",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-22",
+      "version": 4,
+      "hash": "afebe8b43b115a35540194e1a4be9e854ed66d159a8e4a4e1fb719ab9b554edf",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-23",
+      "version": 3,
+      "hash": "4faed234921ec069a16fff0896ba4424f58baa495e858f42a199d85884a8edb4",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-24",
+      "version": 6,
+      "hash": "bd67b26d867d2bc8e038009ab6680476384950e0ab16684294a593fef3ee14f6",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-25",
+      "version": 2,
+      "hash": "88a0629ccebe95a3c65510e417b237d2084b0fee9df34f032674594190b0dde3",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-26",
+      "version": 4,
+      "hash": "1db6f22d7e8320af0cfc1a74a967d78d13b38f96c4e0bdfa0dc501044997a2e2",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-27A",
+      "version": 3,
+      "hash": "bd0082124aa39bb2df59c9f95f8269914eff0841e2221b7d277426580e2c82fc",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-27B",
+      "version": 4,
+      "hash": "a90fb649e9a11a4a1752c8a9b6ed50751876d3ce1ee7c8b47e94c312a529a71a",
+      "decision": "approve",
+      "feedback": ""
+    },
+    {
+      "id": "IMG-27C",
+      "version": 1,
+      "hash": "959113c312fe30b80532cb2e278e52e38228576ac1f89d6d8bf99f7ad7b81d8b",
+      "decision": "approve",
+      "feedback": ""
+    }
+  ],
+  "assets": [
+    {
+      "id": "IMG-01",
+      "version": 2,
+      "hash": "88102977c693891144457d8d33a6891d56220692093814b81e14166fc30364eb",
+      "asset": "images/projetos/aprovadas/quarto-antonio-catarina/vista-1-v2-88102977c693.png",
+      "original": "images/projetos/quarto-antonio-catarina/vista-1.png",
+      "originalHash": "7a2049de2241a37759e9b71ccc1ae74ffb263f40de504c10fd80bbc151377e2e",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "O pontilhado da cortina, as manchas do xadrez e as sombras fechadas revelam artefatos de render; limpar a transparência e a cor do papel, corrigir o varão e recuperar detalhes preservando o contraluz.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Antonio & Catarina, view 1.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: O pontilhado da cortina e as sombras fechadas prejudicam a leitura dos tecidos e revelam o render; limpar a transparência e recuperar detalhes escuros mantendo o contraluz.\nUser material/geometry corrections:  Papel xadrez com pigmentação uniforme: eliminar manchas cromáticas e borrões de denoiser; preservar padrão e escala. Varão com diâmetro constante e perspectiva correta.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nKeep original printed graphics as existing flat texture maps; do not redraw book covers or posters. When source lettering is unreadable, retain the original soft detail rather than making up new words.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\n\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: Clean the uniform gingham wallpaper color, remove all denoiser mottling and make curtain rod physically straight with constant diameter."
+    },
+    {
+      "id": "IMG-02",
+      "version": 2,
+      "hash": "9cae38255b878d8341c6123d8d0dd65331dc08fe6bff0ccccfd80c6103486bc2",
+      "asset": "images/projetos/aprovadas/quarto-antonio-catarina/vista-2-v2-9cae38255b87.png",
+      "original": "images/projetos/quarto-antonio-catarina/vista-2.png",
+      "originalHash": "51f0528706be76db04dfb84faffe01cc642a5a05c80b605ff38bf882b35d3d5f",
+      "originalScore": 4,
+      "candidateScore": 4,
+      "critique": "A roupa de cama rígida, os veios uniformes, as manchas do xadrez e a distorção do varão reduzem a naturalidade; refinar tecidos e madeira, uniformizar a cor do papel e corrigir a geometria da cortina.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Antonio & Catarina, view 2.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: A roupa de cama rígida e a madeira muito uniforme reduzem a naturalidade dos materiais; refinar dobras, contato e rugosidade sem alterar padrões ou acabamentos.\nUser material/geometry corrections:  Papel xadrez com pigmentação uniforme: eliminar manchas cromáticas e borrões de denoiser; preservar padrão e escala. Varão com diâmetro constante e perspectiva correta.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\n\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: Priority: remove ALL irregular color mottling in the gingham wallpaper; it is uniformly printed sage/cream checks, with only a smooth physical light gradient. Straighten curtain rod with constant diameter; circular grommets, no stretching or warping. Keep all other elements."
+    },
+    {
+      "id": "IMG-03",
+      "version": 2,
+      "hash": "e0c0fc2956b15ecc307e0a7b5a5affa25a2ff9ce811ab127575107bb3bb6201d",
+      "asset": "images/projetos/aprovadas/quarto-antonio-catarina/vista-3-v2-e0c0fc2956b1.png",
+      "original": "images/projetos/quarto-antonio-catarina/vista-3.png",
+      "originalHash": "5877350fa9f5342abab86865481a6d398b15005e4b6c9d2dbff0df82c3b194b4",
+      "originalScore": 4,
+      "candidateScore": 4,
+      "critique": "Os tecidos rígidos, a madeira uniforme e as manchas cromáticas no xadrez revelam a modelagem e a iluminação deficiente; refinar materiais e remover os borrões mantendo o padrão e as sombras reais.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Antonio & Catarina, view 3.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: Colchões e travesseiros com pouca deformação deixam a cama artificial; melhorar dobras, costuras e resposta do tecido à luz preservando suas formas e estampas.\nUser material/geometry corrections:  Papel xadrez com pigmentação uniforme: eliminar manchas cromáticas e borrões de denoiser; preservar padrão e escala. Varão com diâmetro constante e perspectiva correta.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\n\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: Priority: clean uniform sage/cream gingham checks with absolutely no low-frequency colored mottles, uneven patches or denoiser smears. Keep smooth natural lighting; do not change the pattern."
+    },
+    {
+      "id": "IMG-04",
+      "version": 3,
+      "hash": "395b09a0c51275b16d292599676cd5c063a988eda022c0a4044142895427078f",
+      "asset": "images/projetos/aprovadas/quarto-antonio-catarina/vista-4-v3-395b09a0c512.png",
+      "original": "images/projetos/quarto-antonio-catarina/vista-4.png",
+      "originalHash": "22c00f11d6ee46ae4d6d4dcb56945c7c35c364918e8fb676c6194ab8ec03cf37",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "O cesto de barbante rígido como caixa, a palha sem profundidade e os objetos lisos parecem modelados; tornar os cordões flexíveis e a palha realmente vazada e refinar microtextura e sombras preservando todos os elementos.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Antonio & Catarina, view 4.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: O móvel e os brinquedos lisos demais deixam o conjunto com aparência de catálogo 3D e o cesto de barbante rígido como uma caixa; acrescentar microtextura e sombras de contato fisicamente plausíveis sem mudar os objetos e tornar a trama de barbante flexível e natural.\nUser material/geometry corrections: Cesto de barbante: preservar formato e posição, refinar fios flexíveis entrelaçados, fibras e pequenas irregularidades; evitar aparência de caixa rígida. Papel xadrez com pigmentação uniforme: eliminar manchas cromáticas e borrões de denoiser; preservar padrão e escala. Varão com diâmetro constante e perspectiva correta. Cesto de barbante retangular, sem alças novas; portas com palha indiana vazada, conforme referência do usuário.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: Priority: cane cabinet doors must have the real interlaced open weave of reference image 2, at existing fine scale. Center basket is rectangular flexible BARBANTE string with NO handles, no new loops or added parts, with realistic soft fibers. Keep all flat printed artwork/book covers unchanged rather than inventing or rewriting titles."
+    },
+    {
+      "id": "IMG-05",
+      "version": 1,
+      "hash": "68991d37d1d3db6829f6e5daf8605630aa17743e70c539339a62fec099db93e2",
+      "asset": "images/projetos/aprovadas/quarto-antonio-catarina/vista-5-v1-68991d37d1d3.png",
+      "original": "images/projetos/quarto-antonio-catarina/vista-5.png",
+      "originalHash": "d63168eab26322a5ed2bacfe41e593a6ce5758222098b53ebf7fb483615df70a",
+      "originalScore": 4,
+      "candidateScore": 5,
+      "critique": "A granulação dos reflexos e as frentes excessivamente uniformes denunciam o render; limpar o ruído e refinar folgas, bordas e rugosidade da laca preservando o armário.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Antonio & Catarina, view 5.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: A granulação dos reflexos e as frentes excessivamente uniformes denunciam o render; limpar o ruído e refinar folgas, bordas e rugosidade da laca preservando o armário.\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only."
+    },
+    {
+      "id": "IMG-06",
+      "version": 3,
+      "hash": "32a17819758943cd3a1a9c91e2d4b4bf4e5066bd9c857084df340be04db464ad",
+      "asset": "images/projetos/aprovadas/quarto-antonio-catarina/vista-6-v3-32a178197589.png",
+      "original": "images/projetos/quarto-antonio-catarina/vista-6.png",
+      "originalHash": "802b2353ec87ba81cab5171ed4045fe88dc4aa084dbe4994a724243829129a9d",
+      "originalScore": 4,
+      "candidateScore": 4,
+      "critique": "A roupa de cama rígida, o pontilhado da cortina e as manchas no papel reduzem a aparência fotográfica; refinar tecidos, uniformizar o xadrez e corrigir o varão conservando o brinquedo e os impressos originais.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Antonio & Catarina, view 6.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: A roupa de cama pouco natural e o pontilhado da cortina limitam a aparência de fotografia; refinar o tecido e sua transparência mantendo iluminação, estampa e enquadramento.\nUser material/geometry corrections:  Papel xadrez com pigmentação uniforme: eliminar manchas cromáticas e borrões de denoiser; preservar padrão e escala. Varão com diâmetro constante e perspectiva correta.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nKeep original printed graphics as existing flat texture maps; do not redraw book covers or posters. When source lettering is unreadable, retain the original soft detail rather than making up new words.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\n\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: Clean gingham wallpaper color; correct curtain rod perspective and grommets. Foreground toy is the ORIGINAL partly hidden pale rabbit, never replace with a teddy bear. Preserve original cover graphics and blurry lettering rather than inventing new titles."
+    },
+    {
+      "id": "IMG-07",
+      "version": 3,
+      "hash": "9675963bb958a7339af3fd6f3861a894148ef17598631c63382a0276559333f9",
+      "asset": "images/projetos/aprovadas/quarto-antonio-catarina/vista-7-v3-9675963bb958.png",
+      "original": "images/projetos/quarto-antonio-catarina/vista-7.png",
+      "originalHash": "e56921bcc889264b9d6ce978fb31ecdf0a122a3fa06ad9e69e04b390cd68af5a",
+      "originalScore": 4,
+      "candidateScore": 4,
+      "critique": "O cesto de barbante rígido, a trama sem profundidade e os acabamentos uniformes revelam a computação gráfica; refinar fios flexíveis, palha vazada e sombras mantendo o formato retangular e todos os objetos.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Antonio & Catarina, view 7.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: As bordas perfeitas e o acabamento uniforme dos objetos ainda parecem modelados e o cesto de barbante rígido como uma caixa; refinar pequenas sombras, relevos e rugosidade conservando todos os elementos e tornar a trama de barbante flexível e natural.\nUser material/geometry corrections: Cesto de barbante: preservar formato e posição, refinar fios flexíveis entrelaçados, fibras e pequenas irregularidades; evitar aparência de caixa rígida. Papel xadrez com pigmentação uniforme: eliminar manchas cromáticas e borrões de denoiser; preservar padrão e escala. Varão com diâmetro constante e perspectiva correta. Cesto de barbante retangular, sem alças novas; portas com palha indiana vazada, conforme referência do usuário.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nKeep original printed graphics as existing flat texture maps; do not redraw book covers or posters. When source lettering is unreadable, retain the original soft detail rather than making up new words.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: The rectangular basket is flexible woven BARBANTE string, no added handles, no cylindrical or rounded replacement; keep its original rectangular size and position. Cane door panels use reference 2. Preserve exact book-cover graphics and original softness of unreadable print."
+    },
+    {
+      "id": "IMG-08",
+      "version": 1,
+      "hash": "79eb260662b73385d6c6df83b55b758394571a44e3c68502ec19efbdfbbd9c85",
+      "asset": "images/projetos/aprovadas/quarto-antonio-catarina/vista-8-v1-79eb260662b7.png",
+      "original": "images/projetos/quarto-antonio-catarina/vista-8.png",
+      "originalHash": "8ad9118bd605bd9ef910227d840cdc729b19a6e63e31f317d4f596b17c18ede4",
+      "originalScore": 3,
+      "candidateScore": 5,
+      "critique": "As sombras fechadas e a cortina granulada escondem materiais e deixam o ambiente artificial; equilibrar a exposição e limpar transparências mantendo o sentido da luz.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Antonio & Catarina, view 8.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: As sombras fechadas e a cortina granulada escondem materiais e deixam o ambiente artificial; equilibrar a exposição e limpar transparências mantendo o sentido da luz.\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: Preserve the partial rabbit toy visible at bottom right."
+    },
+    {
+      "id": "IMG-09",
+      "version": 3,
+      "hash": "5ce6bc13922c6949d0ff7a3af2dbe27db8ee85d8c76beed48c6b6d0847e48a80",
+      "asset": "images/projetos/aprovadas/quarto-gabi-juju/vista-1-v3-5ce6bc13922c.png",
+      "original": "images/projetos/quarto-gabi-juju/vista-1.png",
+      "originalHash": "6be9d2e7fb3d043772ecc6ef4cf22ce4c545c9c0bd33dfc76bb90098760ad770",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "Os colchões planos, os veios repetitivos e os fachos regulares dos spots revelam o render; dar naturalidade aos tecidos, à madeira e à distribuição da luz preservando o desenho.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Gabi & Juju, view 1.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: Os colchões planos, os veios repetitivos e os fachos regulares dos spots revelam o render; dar naturalidade aos tecidos, à madeira e à distribuição da luz preservando o desenho.\nUser material/geometry corrections: O espelho EM ARCO à esquerda tem moldura branca LISA, SEM LETRAS OU INSCRIÇÕES; a frase dos espelhos redondos não se aplica a este espelho.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nKeep original printed graphics as existing flat texture maps; do not redraw book covers or posters. When source lettering is unreadable, retain the original soft detail rather than making up new words.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: The WHITE ARCH MIRROR at left has NO text or inscription anywhere. Keep its plain white arched frame blank. Do not add Eu me amo here; that phrase only belongs to round mirrors in OTHER views, not this arch mirror. Retain cane panels with reference 2."
+    },
+    {
+      "id": "IMG-10",
+      "version": 2,
+      "hash": "b3c6db587b38b522d7f209ba00b14fd58bf034b346f3627d551f910ddcf40a7e",
+      "asset": "images/projetos/aprovadas/quarto-gabi-juju/vista-2-v2-b3c6db587b38.png",
+      "original": "images/projetos/quarto-gabi-juju/vista-2.png",
+      "originalHash": "33b1ef50f98b91f8a992bf10b9069fdd3fa52d42d032e260064912d12b3da048",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "O tampo uniforme, os veios artificiais das cadeiras e a repetição de acessórios reduzem o realismo; refinar materiais, microtextura e reflexos sem trocar ou reposicionar os objetos.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Gabi & Juju, view 2.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: O tampo uniforme, os veios artificiais das cadeiras e a repetição de acessórios reduzem o realismo; refinar materiais, microtextura e reflexos sem trocar ou reposicionar os objetos.\nUser material/geometry corrections:  As molduras dos espelhos redondos têm a inscrição literal Eu me amo; não inserir nomes Gabi, Juju, corações ou outros dizeres.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nKeep original printed graphics as existing flat texture maps; do not redraw book covers or posters. When source lettering is unreadable, retain the original soft detail rather than making up new words.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: Both round wooden mirror frames must retain ONLY the literal ORIGINAL text: \"Eu me amo\". No Gabi, Juju, names, hearts, personalization or other lettering. Preserve source wall print and do not add light fixtures."
+    },
+    {
+      "id": "IMG-11",
+      "version": 2,
+      "hash": "9573aeeec21ce2592bec91bf5a103aaf02b6398fd665fdc970b30fd996fabc7d",
+      "asset": "images/projetos/aprovadas/quarto-gabi-juju/vista-3-v2-9573aeeec21c.png",
+      "original": "images/projetos/quarto-gabi-juju/vista-3.png",
+      "originalHash": "f0d0aa06b6c6305f240cb94bd068675cd0754b0fa41c5999b891747c4177b6d6",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "As superfícies homogêneas e os tecidos sem volume deixam a perspectiva com aspecto digital; refinar materiais, encontros e tecido mantendo layout, cores e proporções.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Gabi & Juju, view 3.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: As superfícies homogêneas e os tecidos sem volume deixam a perspectiva com aspecto digital; refinar materiais, encontros e tecido mantendo layout, cores e proporções.\nUser material/geometry corrections:  As molduras dos espelhos redondos têm a inscrição literal Eu me amo; não inserir nomes Gabi, Juju, corações ou outros dizeres.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nKeep original printed graphics as existing flat texture maps; do not redraw book covers or posters. When source lettering is unreadable, retain the original soft detail rather than making up new words.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: The mirror frame must keep the exact literal ORIGINAL inscription \"Eu me amo\", never Gabi or Juju or names. Smooth painted closet/ceiling, no canvas texture."
+    },
+    {
+      "id": "IMG-12",
+      "version": 1,
+      "hash": "9d360fb55cff83a91e9ba6882393d04019d8d49417127c2135f0369f8dc031f4",
+      "asset": "images/projetos/aprovadas/quarto-gabi-juju/vista-4-v1-9d360fb55cff.png",
+      "original": "images/projetos/quarto-gabi-juju/vista-4.png",
+      "originalHash": "7f7d6ee3d3b232043bd244e6bc36716854375456c314d93332b651e872aafc46",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "As sombras fechadas e a baixa definição da paisagem deixam interior e exterior pouco integrados; recuperar detalhes e tornar o fundo mais natural mantendo sua composição.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Gabi & Juju, view 4.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: As sombras fechadas e a baixa definição da paisagem deixam interior e exterior pouco integrados; recuperar detalhes e tornar o fundo mais natural mantendo sua composição.\nUser material/geometry corrections: None beyond the source image.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only."
+    },
+    {
+      "id": "IMG-13",
+      "version": 1,
+      "hash": "ad298bf7e163c86c359cc99b187df5077c8b384f6367ddf62ccda2d3727a3d0b",
+      "asset": "images/projetos/aprovadas/quarto-gabi-juju/vista-5-v1-ad298bf7e163.png",
+      "original": "images/projetos/quarto-gabi-juju/vista-5.png",
+      "originalHash": "de0d1ecdd9b6f08f41c986596969087f31824df5be31915e6f8d479fe9d7693a",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "O brilho uniforme do tampo, a moldura com veios artificiais e os acessórios simplificados revelam o render; refinar rugosidade, madeira e microdetalhes preservando cada objeto.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Gabi & Juju, view 5.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: O brilho uniforme do tampo, a moldura com veios artificiais e os acessórios simplificados revelam o render; refinar rugosidade, madeira e microdetalhes preservando cada objeto.\nUser material/geometry corrections:  As molduras dos espelhos redondos têm a inscrição literal Eu me amo; não inserir nomes Gabi, Juju, corações ou outros dizeres.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only."
+    },
+    {
+      "id": "IMG-14",
+      "version": 1,
+      "hash": "b35ffcb2205a7287dbaaa3548b40f71f7e86afa9fafea365cbbf7e6152f8a139",
+      "asset": "images/projetos/aprovadas/quarto-gabi-juju/vista-6-v1-b35ffcb2205a.png",
+      "original": "images/projetos/quarto-gabi-juju/vista-6.png",
+      "originalHash": "9749119945afbf72545de54c245b08ee4fe5b0b8457f728cd3ac21c389894549",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "A trama repetida dos cestos e as prateleiras e bonecos excessivamente regulares denunciam a modelagem; naturalizar superfícies e sombras de contato sem alterar quantidade, forma ou posição.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Gabi & Juju, view 6.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: A trama repetida dos cestos e as prateleiras e bonecos excessivamente regulares denunciam a modelagem; naturalizar superfícies e sombras de contato sem alterar quantidade, forma ou posição.\nUser material/geometry corrections:  As molduras dos espelhos redondos têm a inscrição literal Eu me amo; não inserir nomes Gabi, Juju, corações ou outros dizeres.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1080:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only."
+    },
+    {
+      "id": "IMG-15",
+      "version": 1,
+      "hash": "003215ba7cbae72a16ae51ac6efdd8c5576d6df82286413a334cc927487d3a39",
+      "asset": "images/projetos/aprovadas/sala-estar-jantar-jessica-gabriel/vista-1-v1-003215ba7cba.png",
+      "original": "images/projetos/sala-estar-jantar-jessica-gabriel/vista-1.png",
+      "originalHash": "c60f9205afb2cda90c3edb22a3ad5d2529dd91162617c413c3c4d40e1fa213aa",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "A cortina granulada, os reflexos ruidosos, o couro plástico e a luz manchada revelam o render; limpar transparências e calibrar rugosidade e iluminação indireta preservando o projeto.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Sala de estar e jantar · Jéssica e Gabriel, view 1.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: A cortina granulada, os reflexos ruidosos, o couro plástico e a luz manchada revelam o render; limpar transparências e calibrar rugosidade e iluminação indireta preservando o projeto.\nUser material/geometry corrections: None beyond the source image.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1920:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only."
+    },
+    {
+      "id": "IMG-16",
+      "version": 3,
+      "hash": "fe54b5748cf51da688e7d5657d566c504fb3ee6a395e2381d5596b30803b44e8",
+      "asset": "images/projetos/aprovadas/sala-estar-jantar-jessica-gabriel/vista-2-v3-fe54b5748cf5.png",
+      "original": "images/projetos/sala-estar-jantar-jessica-gabriel/vista-2.png",
+      "originalHash": "c7d36185e0e8e9232af85d04cf6abde31731eb41ada6ffc8384cfa409a5a723c",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "As manchas de iluminação, as sombras fechadas e os acabamentos uniformes deixam a cena artificial; refinar luz indireta, contato e microtextura mantendo toda a mesa e marcenaria.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Sala de estar e jantar · Jéssica e Gabriel, view 2.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: As manchas de iluminação, as sombras fechadas e os acabamentos uniformes deixam a cena artificial; refinar luz indireta, contato e microtextura mantendo toda a mesa e marcenaria.\nUser material/geometry corrections: None beyond the source image.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nKeep original printed graphics as existing flat texture maps; do not redraw book covers or posters. When source lettering is unreadable, retain the original soft detail rather than making up new words.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1920:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: The large wall beside the stairs is plain SMOOTH PAINTED PLASTER, not wallpaper, cloth, linen or canvas. Remove every visible fabric-like grid, preserve the original gray paint color and smooth illumination.\nColoque guarda corpo de vidro na escada\nExceção solicitada explicitamente pelo usuário: ADICIONAR um guarda-corpo de vidro transparente na lateral aberta da escada branca existente. Instalar painéis contínuos e retos de vidro com espessura realista e pequenos pontos de fixação metálicos discretos, acompanhando a inclinação da escada; base apoiada junto às bordas externas dos degraus, topo retilíneo, sem montantes grossos. O vidro deve permanecer atrás da mesa e das cadeiras conforme a profundidade da cena, sem atravessar móveis nem se apoiar no piso da sala. Não trocar ou reposicionar mesa, louças, quatro cadeiras, portas, pendente, armários ou degraus. Esta adição pontual prevalece sobre a proibição genérica de adicionar objetos. Refinar a fotografia preservando parede lisa, cores, veios naturais, palha vazada e reflexos físicos discretos."
+    },
+    {
+      "id": "IMG-17",
+      "version": 2,
+      "hash": "d9b7ea14f630d72dd16c752882f5f6e5e799de33f86f3f6c57693cd3ef7026d5",
+      "asset": "images/projetos/aprovadas/sala-estar-jantar-jessica-gabriel/vista-3-v2-d9b7ea14f630.png",
+      "original": "images/projetos/sala-estar-jantar-jessica-gabriel/vista-3.png",
+      "originalHash": "ef529697848680c44f0ea48960e2b8113951ef7cdfae6b18aaa2c47f87b64042",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "Os veios repetidos, o brilho pontilhado e o tampo excessivamente liso revelam o render; limpar reflexos e refinar madeira, bordas e rugosidade mantendo os acabamentos originais.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Sala de estar e jantar · Jéssica e Gabriel, view 3.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: Os veios repetidos, o brilho pontilhado e o tampo excessivamente liso revelam o render; limpar reflexos e refinar madeira, bordas e rugosidade mantendo os acabamentos originais.\nUser material/geometry corrections: None beyond the source image.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nKeep original printed graphics as existing flat texture maps; do not redraw book covers or posters. When source lettering is unreadable, retain the original soft detail rather than making up new words.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1920:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: Coloque guarda corpo de vidro na escada\nADICIONAR o mesmo guarda-corpo de vidro da vista 2: painéis transparentes, topo retilíneo paralelo à inclinação da escada branca e pequenos fixadores metálicos circulares na lateral dos degraus. O vidro fica na borda aberta da escada e atrás dos móveis, sem atravessar mesa ou cadeiras. Essa adição foi explicitamente solicitada e prevalece sobre a proibição genérica de novos objetos. Input image 3 is ONLY a reference of this exact room seen from another viewpoint with the newly requested glass guardrail; match that guardrail design and material, do not copy its camera or rearrange the current view. Preserve image 1 composition, crop, furnishings and four place settings."
+    },
+    {
+      "id": "IMG-18",
+      "version": 1,
+      "hash": "ae5d84714bd6590eb4b4d60d9abb19929d8135b092b3a3be74cdb7d3ee67d76d",
+      "asset": "images/projetos/aprovadas/sala-estar-jantar-jessica-gabriel/vista-4-v1-ae5d84714bd6.png",
+      "original": "images/projetos/sala-estar-jantar-jessica-gabriel/vista-4.png",
+      "originalHash": "f54caf8139eeb14ffa72641ea0af01d9ba5525e868480a7ad0d0ec7625c0d461",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "O halo intenso do espelho, o pontilhado da cortina e os móveis sem detalhe nas sombras prejudicam o realismo; equilibrar exposição e luz do espelho e limpar transparências.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Sala de estar e jantar · Jéssica e Gabriel, view 4.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: O halo intenso do espelho, o pontilhado da cortina e os móveis sem detalhe nas sombras prejudicam o realismo; equilibrar exposição e luz do espelho e limpar transparências.\nUser material/geometry corrections: None beyond the source image.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1920:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only."
+    },
+    {
+      "id": "IMG-19",
+      "version": 1,
+      "hash": "0d8f27525077b002b1d85f51eb606c0bd9054f2738a85a8754dc1abf9d37ba49",
+      "asset": "images/projetos/aprovadas/sala-estar-jantar-jessica-gabriel/vista-5-v1-0d8f27525077.png",
+      "original": "images/projetos/sala-estar-jantar-jessica-gabriel/vista-5.png",
+      "originalHash": "a5d6dfb72deeac33e34e9e275065382610b283e68725fa4c860e1a6b13ced418",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "A cortina granulada, as paredes manchadas e o couro plástico denunciam o render; refinar a luz indireta, a transparência do tecido e a rugosidade das poltronas.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Sala de estar e jantar · Jéssica e Gabriel, view 5.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: A cortina granulada, as paredes manchadas e o couro plástico denunciam o render; refinar a luz indireta, a transparência do tecido e a rugosidade das poltronas.\nUser material/geometry corrections: None beyond the source image.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1920:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only."
+    },
+    {
+      "id": "IMG-20",
+      "version": 1,
+      "hash": "682a885dc6c15b83f636d2e0e3b4bc528edafd932726dff582f478cf6e32755c",
+      "asset": "images/projetos/aprovadas/sala-estar-jantar-jessica-gabriel/vista-6-v1-682a885dc6c1.png",
+      "original": "images/projetos/sala-estar-jantar-jessica-gabriel/vista-6.png",
+      "originalHash": "33bce434ce462c0208fa90aab15cb93f44e0425ee9b6ae92e84de93c9a659373",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "O couro brilhante, a cortina ruidosa e o halo excessivo do espelho deixam o estar artificial; calibrar rugosidade e iluminação e limpar reflexos mantendo todos os elementos.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Sala de estar e jantar · Jéssica e Gabriel, view 6.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: O couro brilhante, a cortina ruidosa e o halo excessivo do espelho deixam o estar artificial; calibrar rugosidade e iluminação e limpar reflexos mantendo todos os elementos.\nUser material/geometry corrections: None beyond the source image.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\nInput image 2 is ONLY a user-supplied close-up reference for the existing Indian cane weave: thin flat interlaced natural strips, real open polygonal apertures, visible crossing depth and delicate shadows. Apply this ONLY to the cane panels already present, at the original fine scale and original color, never to rope/string baskets. Do not add cane anywhere else. Do not copy the blue background, curled sheet, frayed edges or oversized macro scale into the scene.\nComposition: retain exact framing, perspective, relative dimensions and original 1920:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only."
+    },
+    {
+      "id": "IMG-21",
+      "version": 3,
+      "hash": "0ac460b1313563d9696fcfcdc99b8803b65a15c271a717acd7d52e9d2b3b4fa9",
+      "asset": "images/projetos/aprovadas/cobertura-gourmet-jessica-gabriel/vista-1-v3-0ac460b13135.png",
+      "original": "images/projetos/cobertura-gourmet-jessica-gabriel/vista-1.png",
+      "originalHash": "611937d4b970fc08dcf57979f28df5342e588e65f1b0dd51df390786867a3804",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "A vegetação repetida, a madeira uniforme, a pedra grosseira e as sombras fechadas revelam o render; naturalizar os mesmos materiais e folhas e recuperar detalhes sem adicionar vegetação.",
+      "references": [
+        "outputs/photo-review/candidates/IMG-21-v2.png",
+        "outputs/photo-review/references/telhado-beiral-fotografia.png",
+        "outputs/photo-review/candidates/IMG-24-v6.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset: SS Interiores, rooftop project, view 1.\nInput image 1: the ONLY edit target, the latest version of this exact view. Preserve all non-roof parts of this photograph.\nInput image 2: a real photograph supplied by the user, used ONLY as the construction and material reference for the exposed clay-tile roof/eaves. Do not copy its stone wall, gable, sky framing, black border or different camera.\nPrimary request: COMPLETELY REBUILD every visible part of the roof, above and below, to look like a real roof of the type in image 2. This is a replacement of the defective roof geometry, not merely a retexture of the old CGI blocks. Within the existing roof footprint, pitch and outer extent, reconstruct thin real fired-clay tiles in regular overlapping rows, their curved channels and caps, authentic small tile lips and the actual modest ceramic thickness. Use the reference's natural muted terracotta color and matte ceramic response. Avoid thick toy-like S-shaped extrusions, inflated sausage profiles, oversized stepped interlocks, polygonal blocks, repeated bright ridges, floating tiles, roof gaps or impossible intersections.\nExposed eaves and underside: follow the photograph's open, layered construction: visible clay tile undersides resting on slim transverse timber battens, themselves supported by realistically proportioned parallel rafters and darker timber beams with clear load-bearing contacts. Show a readable hierarchy of tile / batten / rafter / beam, not a flat orange ceiling or a solid slab. The eave edge has realistic tile overhang and finely layered construction. Replace the oversized solid plank-like fascia/block at the roof edge with the open eave construction visible in the reference; keep any needed structural beams but give them credible moderate proportions and sound connections. No decorative thick horizontal wood band or vertical board texture masquerading as a beam.\nWood: match the reference's dark natural brown, restrained fine grain following the LENGTH of each beam, rafter and batten, subtle edges and slight natural material variation. Preserve the feel of well-maintained wood; no exaggerated weathering, rot, dirt, splitting, cartoon veins, striped orange varnish or mottled high-contrast maps. Retain the reference's believable physical depth, occlusion and shadows at all supports.\nIf a roof face is occluded or outside the image, do not expand the image to show it: rebuild only the visible roof portions. Preserve the original roof coverage and architectural relationship to the existing walls and windows. The user explicitly authorizes replacement of roof geometry, member proportions and local positioning within that envelope, superseding previous instructions to retain the faulty roof layout. Match roof construction, tile type, timber finish and member scale across this project's five views.\nLOCALITY INVARIANTS: absolutely preserve framing, camera perspective, aspect ratio, every wall and opening, windows, furniture, cabinets and their texture, stone, bath, appliances, lights, decoration, existing plants, object count, landscape and TV content from image 1. The user wants ONLY the roof rebuilt. Do not globally restyle, relight, recolor, add objects or copy any unrelated element from image 2. Allow only physically necessary local contact-shadow and roof-reflection corrections. No people, new text, red marks, watermarks or cropping.\nView-specific constraints: Keep the open barbecue lid at the far right as an open hinged lid, not a cylinder. Keep all outdoor vegetation and the TV reflection scene content; update only a roof reflection when necessary for coherence.\nReturn one real-camera architectural photograph with a physically believable roof matching image 2.\n\nInput image 3 is ONLY a consistency reference showing the same rooftop with its newly rebuilt roof in view 4. Match its muted terracotta tiles, darker structural timber, open layered eaves and real tile/batten/rafter/beam hierarchy. Image 2 remains the authoritative real photographic roof reference. Do not copy image 3 viewpoint, furniture, outline or background into image 1. Preserve the exact composition and all non-roof content of image 1.\n"
+    },
+    {
+      "id": "IMG-22",
+      "version": 4,
+      "hash": "afebe8b43b115a35540194e1a4be9e854ed66d159a8e4a4e1fb719ab9b554edf",
+      "asset": "images/projetos/aprovadas/cobertura-gourmet-jessica-gabriel/vista-2-v4-afebe8b43b11.png",
+      "original": "images/projetos/cobertura-gourmet-jessica-gabriel/vista-2.png",
+      "originalHash": "f9a35a4ab409c50b0e273a9ed241b440fb38803422e07442e207b035d4163df4",
+      "originalScore": 2,
+      "candidateScore": 4,
+      "critique": "As folhas angulosas, as banquetas escondidas nas sombras e os veios repetidos denunciam a computação gráfica; corrigir a geometria local e refinar materiais e exposição sem mudar a cena.",
+      "references": [
+        "outputs/photo-review/candidates/IMG-22-v2.png",
+        "outputs/photo-review/references/telhado-beiral-fotografia.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset: SS Interiores, rooftop project, view 2.\nInput image 1: the ONLY edit target, the latest version of this exact view. Preserve all non-roof parts of this photograph.\nInput image 2: a real photograph supplied by the user, used ONLY as the construction and material reference for the exposed clay-tile roof/eaves. Do not copy its stone wall, gable, sky framing, black border or different camera.\nPrimary request: COMPLETELY REBUILD every visible part of the roof, above and below, to look like a real roof of the type in image 2. This is a replacement of the defective roof geometry, not merely a retexture of the old CGI blocks. Within the existing roof footprint, pitch and outer extent, reconstruct thin real fired-clay tiles in regular overlapping rows, their curved channels and caps, authentic small tile lips and the actual modest ceramic thickness. Use the reference's natural muted terracotta color and matte ceramic response. Avoid thick toy-like S-shaped extrusions, inflated sausage profiles, oversized stepped interlocks, polygonal blocks, repeated bright ridges, floating tiles, roof gaps or impossible intersections.\nExposed eaves and underside: follow the photograph's open, layered construction: visible clay tile undersides resting on slim transverse timber battens, themselves supported by realistically proportioned parallel rafters and darker timber beams with clear load-bearing contacts. Show a readable hierarchy of tile / batten / rafter / beam, not a flat orange ceiling or a solid slab. The eave edge has realistic tile overhang and finely layered construction. Replace the oversized solid plank-like fascia/block at the roof edge with the open eave construction visible in the reference; keep any needed structural beams but give them credible moderate proportions and sound connections. No decorative thick horizontal wood band or vertical board texture masquerading as a beam.\nWood: match the reference's dark natural brown, restrained fine grain following the LENGTH of each beam, rafter and batten, subtle edges and slight natural material variation. Preserve the feel of well-maintained wood; no exaggerated weathering, rot, dirt, splitting, cartoon veins, striped orange varnish or mottled high-contrast maps. Retain the reference's believable physical depth, occlusion and shadows at all supports.\nIf a roof face is occluded or outside the image, do not expand the image to show it: rebuild only the visible roof portions. Preserve the original roof coverage and architectural relationship to the existing walls and windows. The user explicitly authorizes replacement of roof geometry, member proportions and local positioning within that envelope, superseding previous instructions to retain the faulty roof layout. Match roof construction, tile type, timber finish and member scale across this project's five views.\nLOCALITY INVARIANTS: absolutely preserve framing, camera perspective, aspect ratio, every wall and opening, windows, furniture, cabinets and their texture, stone, bath, appliances, lights, decoration, existing plants, object count, landscape and TV content from image 1. The user wants ONLY the roof rebuilt. Do not globally restyle, relight, recolor, add objects or copy any unrelated element from image 2. Allow only physically necessary local contact-shadow and roof-reflection corrections. No people, new text, red marks, watermarks or cropping.\nView-specific constraints: Keep the same plant, bar stools, barbecue lid, window grid and the original distant small hill without adding buildings. Show the underside of this roof from the current camera.\nReturn one real-camera architectural photograph with a physically believable roof matching image 2.\nCRITICAL CAMERA LOCK: image 1 is the view with a LARGE GREEN PLANT in the LEFT foreground, a tall light-colored wall/pillar on the RIGHT foreground, black stools and bar counter in the middle, and sunset through the rear window. Keep that exact image, its layout and all objects. Do not turn it into a front-facing kitchen, sink/cabinet elevation or hot-tub view. Image 2 is only the tiny roof photograph, never a target scene. Rebuild ONLY the overhead roof visible in image 1.\n\n"
+    },
+    {
+      "id": "IMG-23",
+      "version": 3,
+      "hash": "4faed234921ec069a16fff0896ba4424f58baa495e858f42a199d85884a8edb4",
+      "asset": "images/projetos/aprovadas/cobertura-gourmet-jessica-gabriel/vista-3-v3-4faed234921e.png",
+      "original": "images/projetos/cobertura-gourmet-jessica-gabriel/vista-3.png",
+      "originalHash": "089286c8b9d96ffae94b678802109fcc234b98f5fa3fab1b4d7f9b3ad3aefa7c",
+      "originalScore": 2,
+      "candidateScore": 4,
+      "critique": "As sombras fechadas e os reflexos artificiais da água e dos metais deixam o espaço pouco fotográfico; corrigir a resposta física dos materiais e equilibrar a exposição mantendo paisagem e objetos.",
+      "references": [
+        "outputs/photo-review/candidates/IMG-23-v2.png",
+        "outputs/photo-review/references/telhado-beiral-fotografia.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset: SS Interiores, rooftop project, view 3.\nInput image 1: the ONLY edit target, the latest version of this exact view. Preserve all non-roof parts of this photograph.\nInput image 2: a real photograph supplied by the user, used ONLY as the construction and material reference for the exposed clay-tile roof/eaves. Do not copy its stone wall, gable, sky framing, black border or different camera.\nPrimary request: COMPLETELY REBUILD every visible part of the roof, above and below, to look like a real roof of the type in image 2. This is a replacement of the defective roof geometry, not merely a retexture of the old CGI blocks. Within the existing roof footprint, pitch and outer extent, reconstruct thin real fired-clay tiles in regular overlapping rows, their curved channels and caps, authentic small tile lips and the actual modest ceramic thickness. Use the reference's natural muted terracotta color and matte ceramic response. Avoid thick toy-like S-shaped extrusions, inflated sausage profiles, oversized stepped interlocks, polygonal blocks, repeated bright ridges, floating tiles, roof gaps or impossible intersections.\nExposed eaves and underside: follow the photograph's open, layered construction: visible clay tile undersides resting on slim transverse timber battens, themselves supported by realistically proportioned parallel rafters and darker timber beams with clear load-bearing contacts. Show a readable hierarchy of tile / batten / rafter / beam, not a flat orange ceiling or a solid slab. The eave edge has realistic tile overhang and finely layered construction. Replace the oversized solid plank-like fascia/block at the roof edge with the open eave construction visible in the reference; keep any needed structural beams but give them credible moderate proportions and sound connections. No decorative thick horizontal wood band or vertical board texture masquerading as a beam.\nWood: match the reference's dark natural brown, restrained fine grain following the LENGTH of each beam, rafter and batten, subtle edges and slight natural material variation. Preserve the feel of well-maintained wood; no exaggerated weathering, rot, dirt, splitting, cartoon veins, striped orange varnish or mottled high-contrast maps. Retain the reference's believable physical depth, occlusion and shadows at all supports.\nIf a roof face is occluded or outside the image, do not expand the image to show it: rebuild only the visible roof portions. Preserve the original roof coverage and architectural relationship to the existing walls and windows. The user explicitly authorizes replacement of roof geometry, member proportions and local positioning within that envelope, superseding previous instructions to retain the faulty roof layout. Match roof construction, tile type, timber finish and member scale across this project's five views.\nLOCALITY INVARIANTS: absolutely preserve framing, camera perspective, aspect ratio, every wall and opening, windows, furniture, cabinets and their texture, stone, bath, appliances, lights, decoration, existing plants, object count, landscape and TV content from image 1. The user wants ONLY the roof rebuilt. Do not globally restyle, relight, recolor, add objects or copy any unrelated element from image 2. Allow only physically necessary local contact-shadow and roof-reflection corrections. No people, new text, red marks, watermarks or cropping.\nView-specific constraints: Keep the approved-for-review elevated rooftop landscape with distant mountains and buildings; never return to ground-level fields. Keep the bath, faucets, laundry and dark TV. Show the visible underside of the same roof.\nReturn one real-camera architectural photograph with a physically believable roof matching image 2.\n"
+    },
+    {
+      "id": "IMG-24",
+      "version": 6,
+      "hash": "bd67b26d867d2bc8e038009ab6680476384950e0ab16684294a593fef3ee14f6",
+      "asset": "images/projetos/aprovadas/cobertura-gourmet-jessica-gabriel/vista-4-v6-bd67b26d867d.png",
+      "original": "images/projetos/cobertura-gourmet-jessica-gabriel/vista-4.png",
+      "originalHash": "0f98a27e2247d4db26f879b09804c5e0ddb7df165b65d5f8fc1d7a1cf6961296",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "As telhas facetadas, os encaixes incoerentes e os veios verticais na viga horizontal fazem o telhado parecer blocos de computador; reconstruir perfis cerâmicos curvos, apoios e sobreposições plausíveis e orientar os veios pelo comprimento de cada peça de madeira.",
+      "references": [
+        "outputs/photo-review/candidates/IMG-24-v5.png",
+        "outputs/photo-review/references/telhado-beiral-fotografia.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset: SS Interiores, rooftop project, view 4.\nInput image 1: the ONLY edit target, the latest version of this exact view. Preserve all non-roof parts of this photograph.\nInput image 2: a real photograph supplied by the user, used ONLY as the construction and material reference for the exposed clay-tile roof/eaves. Do not copy its stone wall, gable, sky framing, black border or different camera.\nPrimary request: COMPLETELY REBUILD every visible part of the roof, above and below, to look like a real roof of the type in image 2. This is a replacement of the defective roof geometry, not merely a retexture of the old CGI blocks. Within the existing roof footprint, pitch and outer extent, reconstruct thin real fired-clay tiles in regular overlapping rows, their curved channels and caps, authentic small tile lips and the actual modest ceramic thickness. Use the reference's natural muted terracotta color and matte ceramic response. Avoid thick toy-like S-shaped extrusions, inflated sausage profiles, oversized stepped interlocks, polygonal blocks, repeated bright ridges, floating tiles, roof gaps or impossible intersections.\nExposed eaves and underside: follow the photograph's open, layered construction: visible clay tile undersides resting on slim transverse timber battens, themselves supported by realistically proportioned parallel rafters and darker timber beams with clear load-bearing contacts. Show a readable hierarchy of tile / batten / rafter / beam, not a flat orange ceiling or a solid slab. The eave edge has realistic tile overhang and finely layered construction. Replace the oversized solid plank-like fascia/block at the roof edge with the open eave construction visible in the reference; keep any needed structural beams but give them credible moderate proportions and sound connections. No decorative thick horizontal wood band or vertical board texture masquerading as a beam.\nWood: match the reference's dark natural brown, restrained fine grain following the LENGTH of each beam, rafter and batten, subtle edges and slight natural material variation. Preserve the feel of well-maintained wood; no exaggerated weathering, rot, dirt, splitting, cartoon veins, striped orange varnish or mottled high-contrast maps. Retain the reference's believable physical depth, occlusion and shadows at all supports.\nIf a roof face is occluded or outside the image, do not expand the image to show it: rebuild only the visible roof portions. Preserve the original roof coverage and architectural relationship to the existing walls and windows. The user explicitly authorizes replacement of roof geometry, member proportions and local positioning within that envelope, superseding previous instructions to retain the faulty roof layout. Match roof construction, tile type, timber finish and member scale across this project's five views.\nLOCALITY INVARIANTS: absolutely preserve framing, camera perspective, aspect ratio, every wall and opening, windows, furniture, cabinets and their texture, stone, bath, appliances, lights, decoration, existing plants, object count, landscape and TV content from image 1. The user wants ONLY the roof rebuilt. Do not globally restyle, relight, recolor, add objects or copy any unrelated element from image 2. Allow only physically necessary local contact-shadow and roof-reflection corrections. No people, new text, red marks, watermarks or cropping.\nView-specific constraints: Keep the latest subdued, low-contrast wood veneer on the lower kitchen doors and drawers; do not reintroduce dark striped grain. Keep the gray waterproof woven sofa at the rear right. This view shows the frontal eaves, the roof tile ends/upper surface and the underside at right; rebuild all of those roof parts consistently.\nReturn one real-camera architectural photograph with a physically believable roof matching image 2.\n"
+    },
+    {
+      "id": "IMG-25",
+      "version": 2,
+      "hash": "88a0629ccebe95a3c65510e417b237d2084b0fee9df34f032674594190b0dde3",
+      "asset": "images/projetos/aprovadas/cobertura-gourmet-jessica-gabriel/vista-5-v2-88a0629ccebe.png",
+      "original": "images/projetos/cobertura-gourmet-jessica-gabriel/vista-5.png",
+      "originalHash": "4abcac538533a1c0b26e12ac16b374c6591bec77ae0005e84965a58e5c2ba1f7",
+      "originalScore": 3,
+      "candidateScore": 4,
+      "critique": "O ripado uniforme, a luz manchada e os materiais simplificados deixam o estar com aspecto digital; refinar textura e iluminação mantendo sofá, vegetação, TV e o conteúdo da tela.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Cobertura gourmet · Jéssica e Gabriel, view 5.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: O ripado uniforme, a luz manchada e os materiais simplificados deixam o estar com aspecto digital; refinar textura e iluminação mantendo sofá, vegetação, TV e o conteúdo da tela.\nUser material/geometry corrections: A peça metálica atrás da bancada é a TAMPA ABERTA de uma churrasqueira com dobradiça, não um cilindro, tonel ou vaso; preservar seu desenho e posição no render original.\nRoof correction authorized by user: locally rebuild defective tile and timber geometry while preserving roof silhouette, pitch, span, eaves, room footprint and structural arrangement. Horizontal timber beams and fascia MUST have grain running lengthwise horizontally; rafters have grain along their own length. No vertical board texture on a continuous horizontal structural beam. Terracotta tiles have smooth curved thin ceramic profiles, plausible overlaps, consistent row alignment and physical support, never angular hexagonal block segments. Keep wood brown and terracotta orange, no aging or new objects.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nKeep original printed graphics as existing flat texture maps; do not redraw book covers or posters. When source lettering is unreadable, retain the original soft detail rather than making up new words.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\n\nComposition: retain exact framing, perspective, relative dimensions and original 1920:1080 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: a tv coloca uma imagem com brilho e etc de tv\nCorreção explicitamente solicitada para a TV: a tela existente deve parecer um televisor LIGADO fotografado por câmera, mostrando a mesma paisagem de floresta nevada e sol, com luminância emissiva própria, cores e contraste de um painel real e reflexos ambientais suaves na superfície de vidro. Preservar a composição da paisagem na tela e as inscrições já existentes, sem inventar novas palavras ou logos. O brilho deve continuar legível e natural, sem tela chapada como pôster impresso, sem branco estourado, sem halo intenso na parede ou novos cabos. Essa correção de emissão luminosa da tela é autorizada e prevalece sobre manter a aparência opaca do render. Manter TV no mesmo tamanho, posição e inclinação, rack e objetos, sofá cinza, quadros, ripado, planta, trilhos e enquadramento."
+    },
+    {
+      "id": "IMG-26",
+      "version": 4,
+      "hash": "1db6f22d7e8320af0cfc1a74a967d78d13b38f96c4e0bdfa0dc501044997a2e2",
+      "asset": "images/projetos/aprovadas/cobertura-gourmet-jessica-gabriel/vista-6-v4-1db6f22d7e83.png",
+      "original": "images/projetos/cobertura-gourmet-jessica-gabriel/vista-6.png",
+      "originalHash": "41ccef93861a152daa0ca6d015f457b103eb449f52ffc92b1df4ccb24aa18eba",
+      "originalScore": 2,
+      "candidateScore": 4,
+      "critique": "A repetição dos veios, a pedra sem relevo convincente e as sombras fechadas revelam o modelo 3D; corrigir escala e variação das texturas, resposta dos materiais à luz e exposição do fundo.",
+      "references": [
+        "outputs/photo-review/candidates/IMG-26-v3.png",
+        "outputs/photo-review/references/telhado-beiral-fotografia.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset: SS Interiores, rooftop project, view 6.\nInput image 1: the ONLY edit target, the latest version of this exact view. Preserve all non-roof parts of this photograph.\nInput image 2: a real photograph supplied by the user, used ONLY as the construction and material reference for the exposed clay-tile roof/eaves. Do not copy its stone wall, gable, sky framing, black border or different camera.\nPrimary request: COMPLETELY REBUILD every visible part of the roof, above and below, to look like a real roof of the type in image 2. This is a replacement of the defective roof geometry, not merely a retexture of the old CGI blocks. Within the existing roof footprint, pitch and outer extent, reconstruct thin real fired-clay tiles in regular overlapping rows, their curved channels and caps, authentic small tile lips and the actual modest ceramic thickness. Use the reference's natural muted terracotta color and matte ceramic response. Avoid thick toy-like S-shaped extrusions, inflated sausage profiles, oversized stepped interlocks, polygonal blocks, repeated bright ridges, floating tiles, roof gaps or impossible intersections.\nExposed eaves and underside: follow the photograph's open, layered construction: visible clay tile undersides resting on slim transverse timber battens, themselves supported by realistically proportioned parallel rafters and darker timber beams with clear load-bearing contacts. Show a readable hierarchy of tile / batten / rafter / beam, not a flat orange ceiling or a solid slab. The eave edge has realistic tile overhang and finely layered construction. Replace the oversized solid plank-like fascia/block at the roof edge with the open eave construction visible in the reference; keep any needed structural beams but give them credible moderate proportions and sound connections. No decorative thick horizontal wood band or vertical board texture masquerading as a beam.\nWood: match the reference's dark natural brown, restrained fine grain following the LENGTH of each beam, rafter and batten, subtle edges and slight natural material variation. Preserve the feel of well-maintained wood; no exaggerated weathering, rot, dirt, splitting, cartoon veins, striped orange varnish or mottled high-contrast maps. Retain the reference's believable physical depth, occlusion and shadows at all supports.\nIf a roof face is occluded or outside the image, do not expand the image to show it: rebuild only the visible roof portions. Preserve the original roof coverage and architectural relationship to the existing walls and windows. The user explicitly authorizes replacement of roof geometry, member proportions and local positioning within that envelope, superseding previous instructions to retain the faulty roof layout. Match roof construction, tile type, timber finish and member scale across this project's five views.\nLOCALITY INVARIANTS: absolutely preserve framing, camera perspective, aspect ratio, every wall and opening, windows, furniture, cabinets and their texture, stone, bath, appliances, lights, decoration, existing plants, object count, landscape and TV content from image 1. The user wants ONLY the roof rebuilt. Do not globally restyle, relight, recolor, add objects or copy any unrelated element from image 2. Allow only physically necessary local contact-shadow and roof-reflection corrections. No people, new text, red marks, watermarks or cropping.\nView-specific constraints: Keep the clear sky with its faint horizon, washing machine, drying rack, towels and window openings exactly as in image 1; do not add a skyline. Replace only the roof portion visible through and above the window, preserving the rest of the laundry and deck.\nReturn one real-camera architectural photograph with a physically believable roof matching image 2.\n"
+    },
+    {
+      "id": "IMG-27A",
+      "version": 3,
+      "hash": "bd0082124aa39bb2df59c9f95f8269914eff0841e2221b7d277426580e2c82fc",
+      "asset": "images/projetos/aprovadas/area-gourmet-apto-401/vista-1-v3-bd0082124aa3.png",
+      "original": "images/projetos/projeto-area-gourmet-reforma.png",
+      "originalHash": "5abdd24f0414dcf22427690386b71a9129ed4382881b44a829a029afc961746e",
+      "originalScore": 2,
+      "candidateScore": 4,
+      "critique": "A baixa definição, a luz plana e os objetos com materiais simplificados deixam o recorte artificial; reconstruir microdetalhes e luz física conservando todos os elementos visíveis.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Área gourmet · Apê 401, view 1.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: A baixa definição, a luz plana e os objetos com materiais simplificados deixam o recorte artificial; reconstruir microdetalhes e luz física conservando todos os elementos visíveis.\nUser material/geometry corrections: None beyond the source image.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nKeep original printed graphics as existing flat texture maps; do not redraw book covers or posters. When source lettering is unreadable, retain the original soft detail rather than making up new words.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\n\nComposition: retain exact framing, perspective, relative dimensions and original 561:557 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: The open wall-mounted rectangular metal appliance at right contains ONLY the original metal rack/support components, NO wine glasses, bottles, dishes or new contents. Preserve the source geometry and empty areas; do not decorate it. Keep foosball player count and colors, legs, sink and wall layout.\nKeep the ceiling-wall junction completely PLAIN AND UNLIT, exactly like the source. No LED strips, cove lighting, rim lights, luminous seams, wall sconces, added spotlights or new fixtures. Natural diffuse illumination only. The open metal appliance at right retains only its source racks/supports, NO glasses or bottles. Preserve all existing source objects, geometry and framing."
+    },
+    {
+      "id": "IMG-27B",
+      "version": 4,
+      "hash": "a90fb649e9a11a4a1752c8a9b6ed50751876d3ce1ee7c8b47e94c312a529a71a",
+      "asset": "images/projetos/aprovadas/area-gourmet-apto-401/vista-2-v4-a90fb649e9a1.png",
+      "original": "images/projetos/projeto-area-gourmet-reforma.png",
+      "originalHash": "e2af09a55a9ec74eca36f6ec31ffbc6dc4b43c034ce1f2e1867484dee6a230b4",
+      "originalScore": 2,
+      "candidateScore": 4,
+      "critique": "As tramas rígidas, os objetos simplificados e as sombras fracas revelam o modelo 3D; refinar materiais, geometria local e sombras de contato mantendo o recorte e o mobiliário.",
+      "references": [
+        "outputs/photo-review/candidates/IMG-27B-v3.png"
+      ],
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the sole edit target: the latest corrected version 3 of this wooden folding screen door, with the existing black chairs and round woven black stool. Make one local architectural geometry correction.\nPrimary request: thicken ALL the horizontal timber louvers in every leaf of the existing folding door so that they read as a robust wooden brise-soleil, not thin venetian-blind sticks. Increase each horizontal slat's visible vertical face to roughly three times its current thickness, and give it a clear, physically plausible solid timber depth, rectangular section, softly eased edges, a visible top face and substantial contact shadows. Keep the current regular center-to-center spacing and the existing louver angle; the gaps become visibly narrower because the blades become thicker. Maintain enough openings for ventilation and glimpses of the same laundry equipment behind the screen, but let the more substantial blades provide greater screening. Apply the same cross-section consistently across all panels, accounting for perspective.\nMaterials: keep the same natural warm honey-brown timber color with fine lengthwise grain on each horizontal blade, a calm matte finish and coherent soft reflections. Match the existing wooden frame. Avoid thin wires, matchsticks, warped blades, metal fins, plastic, exaggerated color variation or coarse dark grain.\nInvariants: preserve the complete folding-door layout, number and positions of its vertical frames and leaves, hinges, surrounding timber perimeter, opening dimensions, green wall, ceiling boards, floor, lighting direction, camera, exact crop and aspect ratio. Do not thicken or move the vertical frames. Keep every black chair and the round woven stool with the same size, silhouette, position and upholstery. Keep the laundry equipment behind the slats only as already visible; the narrower openings naturally occlude more of it. Do not add baskets, objects, vegetation, handles, decorations, people, text or red annotations. Preserve the version 3 correction that removed invented baskets. No changes outside the horizontal louver geometry and its physically necessary shadows. Return one photographic image.\n"
+    },
+    {
+      "id": "IMG-27C",
+      "version": 1,
+      "hash": "959113c312fe30b80532cb2e278e52e38228576ac1f89d6d8bf99f7ad7b81d8b",
+      "asset": "images/projetos/aprovadas/area-gourmet-apto-401/vista-3-v1-959113c312fe.png",
+      "original": "images/projetos/projeto-area-gourmet-reforma.png",
+      "originalHash": "1069592b11ca9146a1e3f65054ac3abaa8ae04bd9b45ef429507af20eadc79ce",
+      "originalScore": 2,
+      "candidateScore": 4,
+      "critique": "A baixa definição, os revestimentos planos e os objetos simplificados reduzem o realismo; refinar textura, luz e microdetalhes preservando a área efetivamente visível.",
+      "references": [],
+      "prompt": "Use case: style-transfer. Asset: SS Interiores architectural portfolio, Área gourmet · Apê 401, view 3.\nInput image 1: the ONLY edit target and strict composition reference, an existing 3D rendering.\nPrimary request: make this exact image look like a real professional architectural camera photograph through subtle physical material, lighting and optical corrections. Preserve the scene precisely, as if photographing the existing design from the identical camera.\nSpecific critique and solution: A baixa definição, os revestimentos planos e os objetos simplificados reduzem o realismo; refinar textura, luz e microdetalhes preservando a área efetivamente visível.\nUser material/geometry corrections: None beyond the source image.\nRender cleanup: remove low-frequency splotches, chromatic clouds, uneven color patches, waxy denoiser smearing, speckles and low-sample illumination artifacts from walls, ceilings and repeated patterns. Preserve legitimate smooth illumination gradients, contact shadows and fine material detail. Wallpaper has a stable, consistent base color and clean repeating pattern; do not reinterpret blotchy lighting as stains or variable wallpaper colors. Keep pattern alignment and scale unchanged.\nPlain painted walls and ceilings stay smooth painted plaster with extremely subtle paint texture, NEVER added linen, canvas, woven fabric, crosshatching, coarse stucco or a new wall covering. Printed wallpapers retain only the original printed design. Do not invent inscriptions, names or personalization on any object.\nGeometry cleanup: straight curtain rods have a constant plausible diameter with correct perspective, circular grommets and sound wall supports; avoid stretched, tapering, bent or floating rods, while keeping original mounting and position.\n\nComposition: retain exact framing, perspective, relative dimensions and original 278:330 aspect ratio; do not crop or outpaint.\nINVARIANTS: keep every object, its count, position, silhouette and design, all architecture and openings, joinery divisions, furniture, decorative objects, plant locations, roofing structure, existing background skyline, artwork, book covers, legible text, TV screen content and reflections' scene content. Keep original colors, material identities, wood grain direction, fabric patterns and time of day. Keep the room looking new; do not add weathering, stains or a different finish. No added trees, flowers, leaves as new scene elements, props or people. Do not replace the landscape with another scene. Do not change the cabinet configuration, window dimensions, floor pattern or camera position.\nAllowed changes: realistic fine texture at the existing scale, natural material roughness, physically correct light transmission and contact shadows, cleaner reflections and plausible exposure. Correct only visibly defective local geometry, such as an angular leaf or malformed tile, preserving its position and overall shape. For bedding preserve all patterns and silhouettes while making existing folds physically plausible.\nPhotography: natural photographic exposure, true material response and coherent crisp detail, realistic lens rendering. Retain the original light direction and mood with modest shadow recovery. No artificial HDR, no excessive blur or sharpening, no illustration or glossy CGI look. No new text or watermarks. One finished photograph only.\nRevision feedback, mandatory: Preserve the visible cropped top-loading washing machine exactly, its lid and partial framing; no invented extra appliances or decor."
+    }
+  ]
+}

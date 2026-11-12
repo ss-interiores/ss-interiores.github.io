@@ -1,0 +1,166 @@
+<div id="ss-photo-tier-review">
+  <style>
+    #ss-photo-tier-review { display:grid; gap:calc(var(--font-size-base) * 1); color:var(--foreground); }
+    #ss-photo-tier-review .top { padding-right:100px; display:grid; gap:calc(var(--font-size-base) * .25); }
+    #ss-photo-tier-review .tiers { display:grid; gap:calc(var(--font-size-base) * .5); }
+    #ss-photo-tier-review .tier { display:grid; grid-template-columns:50px minmax(0,1fr); align-items:start; gap:calc(var(--font-size-base) * .5); }
+    #ss-photo-tier-review .tier-label { padding-top:calc(var(--font-size-base) * .75); font-weight:500; }
+    #ss-photo-tier-review .tier-items { display:grid; grid-template-columns:repeat(auto-fill,minmax(82px,1fr)); gap:calc(var(--font-size-base) * .5); }
+    #ss-photo-tier-review .empty { color:var(--muted-foreground); padding-top:calc(var(--font-size-base) * .75); }
+    #ss-photo-tier-review .detail { display:grid; gap:calc(var(--font-size-base) * .75); }
+    #ss-photo-tier-review .comparison { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:calc(var(--font-size-base) * .75); }
+    #ss-photo-tier-review figure { margin:0; display:grid; gap:calc(var(--font-size-base) * .25); min-width:0; }
+    #ss-photo-tier-review .comparison-image { display:block; width:100%; height:310px; object-fit:contain; }
+    #ss-photo-tier-review .critique { display:grid; gap:calc(var(--font-size-base) * .25); }
+    #ss-photo-tier-review .muted { color:var(--muted-foreground); }
+    #ss-photo-tier-review .identity { overflow-wrap:anywhere; }
+    #ss-photo-tier-review .batch { display:flex; flex-wrap:wrap; align-items:center; gap:calc(var(--font-size-base) * .75); }
+    #ss-photo-tier-review .batch-summary { flex:1 1 220px; }
+    @media(max-width:520px) { #ss-photo-tier-review .comparison { grid-template-columns:1fr; } #ss-photo-tier-review .comparison-image { height:280px; } }
+  </style>
+  <header class="top">
+    <h2>Tier list e revisão fotográfica</h2>
+    <p class="text-small muted">29 imagens · 1 artificial → 5 fotográfico</p>
+  </header>
+  <div class="viz-controls" aria-label="Notas exibidas na tier list">
+    <button type="button" class="btn" data-basis="before" aria-pressed="true">Notas originais</button>
+    <button type="button" class="btn" data-basis="after" aria-pressed="false">Notas das candidatas</button>
+  </div>
+  <div class="tiers" data-tiers aria-label="Imagens organizadas por nota de 5 a 1"></div>
+  <p class="text-small muted">AC · Antonio e Catarina &nbsp; GJ · Gabi e Juju &nbsp; SJ · Sala &nbsp; CG · Cobertura &nbsp; AG · Área gourmet</p>
+  <hr>
+  <section class="detail" data-detail aria-labelledby="ss-photo-selected-title">
+    <div aria-live="polite" aria-atomic="true">
+      <h3 id="ss-photo-selected-title" data-name>Antonio e Catarina · vista 4</h3>
+      <p class="text-small identity muted" data-identity>IMG-04 · versão 3 · pendente</p>
+    </div>
+    <div class="comparison">
+      <figure>
+        <figcaption data-before-label>Antes · 3/5</figcaption>
+        <img class="comparison-image" data-before alt="Imagem original selecionada">
+        <button type="button" class="btn btn-ghost" data-high="before">Examinar antes em alta</button>
+      </figure>
+      <figure>
+        <figcaption data-after-label>Depois · 4/5</figcaption>
+        <img class="comparison-image" data-after alt="Candidata selecionada para revisão">
+        <button type="button" class="btn btn-ghost" data-high="after">Examinar depois em alta</button>
+      </figure>
+    </div>
+    <div class="critique"><span class="text-small muted">Problema e solução · original</span><p data-critique></p></div>
+    <div class="critique" data-after-critique-block><span class="text-small muted">O que ainda limita a candidata</span><p data-after-critique></p></div>
+    <div class="viz-controls" role="group" aria-label="Decisão sobre a versão selecionada">
+      <button type="button" class="btn" data-decision="approve" aria-pressed="false">Aprovar</button>
+      <button type="button" class="btn" data-decision="redo" aria-pressed="false">Refazer</button>
+      <button type="button" class="btn" data-decision="pending" aria-pressed="true">Pendente</button>
+    </div>
+    <label class="form-label" for="ss-photo-feedback">Comentário para esta imagem
+      <textarea class="form-control" id="ss-photo-feedback" data-feedback rows="2" maxlength="120" placeholder="Ex.: manter o cesto retangular e corrigir a trama do barbante"></textarea>
+    </label>
+  </section>
+  <hr>
+  <div class="batch">
+    <p class="batch-summary tabular-nums" data-counts aria-live="polite">0 aprovações · 0 para refazer · 29 pendentes</p>
+    <button type="button" class="btn btn-primary" data-submit disabled>Enviar lote</button>
+  </div>
+  <p class="text-small muted" data-message role="status" aria-live="polite">Publicação após envio do lote e validação.</p>
+  <script type="application/json" id="ss-photo-tier-data">__PHOTO_REVIEW_DATA__</script>
+  <script>
+    (() => {
+      const root=document.getElementById('ss-photo-tier-review');
+      const data=JSON.parse(document.getElementById('ss-photo-tier-data').textContent);
+      const records=data.images;
+      const byId=new Map(records.map(item=>[item.id,item]));
+      const el=name=>root.querySelector('[data-'+name+']');
+      const elements=Object.fromEntries(['tiers','detail','name','identity','before-label','after-label','before','after','critique','after-critique','after-critique-block','feedback','counts','submit','message'].map(name=>[name,el(name)]));
+      const basisButtons=Array.from(root.querySelectorAll('[data-basis]'));
+      const decisionButtons=Array.from(root.querySelectorAll('[data-decision]'));
+      let selectedId='IMG-24';
+      let basis='before';
+      let choices={};
+      let busy=false;
+      let lastSubmitted='';
+      function emptyChoice(item){return{id:item.id,version:item.version,hash:item.hash,decision:'pending',feedback:''};}
+      function resetChoices(){choices=Object.fromEntries(records.map(item=>[item.id,emptyChoice(item)]));}
+      function snapshot(){return{modelContent:{review:'ss-photo-review',schemaVersion:1,decisions:Object.values(choices)},privateContent:{selectedId,basis,lastSubmitted}};}
+      function persist(){if(typeof window.openai?.setWidgetState==='function')window.openai.setWidgetState(snapshot()).catch(()=>{});}
+      function payload(){return{schemaVersion:1,decisions:records.map(item=>choices[item.id]).filter(choice=>choice.decision!=='pending')};}
+      function signature(){const text=JSON.stringify(payload());let hash=2166136261;for(let i=0;i<text.length;i++)hash=Math.imul(hash^text.charCodeAt(i),16777619);return text.length+':'+(hash>>>0).toString(16);}
+      function renderTier(){
+        elements.tiers.replaceChildren();
+        for(const score of [5,4,3,2,1]){
+          const row=document.createElement('div');row.className='tier';row.dataset.score=String(score);
+          const label=document.createElement('div');label.className='tier-label tabular-nums';label.textContent=score+'/5';
+          const items=document.createElement('div');items.className='tier-items';
+          const matches=records.filter(item=>(basis==='before'?item.originalScore:item.score)===score);
+          if(!matches.length){const empty=document.createElement('span');empty.className='empty text-small';empty.textContent='Sem imagens';items.append(empty);}
+          for(const item of matches){
+            const button=document.createElement('button');button.type='button';button.className='btn viz-tile';button.dataset.id=item.id;button.setAttribute('aria-pressed',String(item.id===selectedId));
+            button.setAttribute('aria-label',item.project+', vista '+item.view+', '+score+' de 5, '+decisionLabel(choices[item.id].decision));
+            button.setAttribute('data-tooltip',item.project+' · vista '+item.view+' · '+score+'/5');
+            const content=document.createElement('span');const img=document.createElement('img');img.src=basis==='before'?item.before:item.after;img.alt='';
+            const ratio=item.width/item.height;img.width=ratio>=1?60:Math.round(60*ratio);img.height=ratio>=1?Math.round(60/ratio):60;
+            const br=document.createElement('br');const identifier=document.createElement('span');identifier.textContent=item.short;
+            content.append(img,br,identifier);button.append(content);items.append(button);
+          }
+          row.append(label,items);elements.tiers.append(row);
+        }
+        basisButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.basis===basis)));
+      }
+      function decisionLabel(value){return{approve:'aprovação selecionada',redo:'refazer selecionado',pending:'pendente'}[value];}
+      function renderDetail(){
+        const item=byId.get(selectedId);const choice=choices[item.id];
+        elements.name.textContent=item.project+' · vista '+item.view;
+        elements.identity.textContent=item.id+' · v'+item.version+' · '+(item.status==='published'?'publicada':decisionLabel(choice.decision));
+        elements['before-label'].textContent='Antes · '+item.originalScore+'/5';
+        elements['after-label'].textContent='Depois · '+item.score+'/5 · v'+item.version;
+        elements.before.src=item.before;elements.before.alt=item.project+', vista '+item.view+', original';
+        elements.after.src=item.after;elements.after.alt=item.project+', vista '+item.view+', candidata versão '+item.version;
+        elements.critique.textContent=item.critique;
+        elements['after-critique'].textContent=item.afterCritique;
+        elements['after-critique-block'].hidden=!item.afterCritique;
+        elements.feedback.value=choice.feedback;
+        decisionButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.decision===choice.decision)));
+        let approved=0,redo=0;for(const choice of Object.values(choices)){if(choice.decision==='approve')approved++;if(choice.decision==='redo')redo++;}
+        elements.counts.textContent=approved+' aprovações · '+redo+' para refazer · '+(records.length-approved-redo)+' pendentes';
+        elements.submit.disabled=busy || approved+redo===0 || signature()===lastSubmitted;
+      }
+      function render(){renderTier();renderDetail();}
+      function restore(state){
+        resetChoices();
+        selectedId='IMG-24';basis='before';lastSubmitted='';
+        elements.message.textContent='Publicação após envio do lote e validação.';
+        const saved=state?.modelContent?.review==='ss-photo-review'&&Array.isArray(state.modelContent.decisions)?state:null;
+        if(saved){for(const choice of saved.modelContent.decisions){if(!choice||typeof choice!=='object')continue;const item=byId.get(choice.id);if(item&&choice.version===item.version&&choice.hash===item.hash&&['approve','redo','pending'].includes(choice.decision)){choices[item.id]={...emptyChoice(item),decision:choice.decision,feedback:typeof choice.feedback==='string'?choice.feedback.slice(0,120):''};}}
+          if(byId.has(saved.privateContent?.selectedId))selectedId=saved.privateContent.selectedId;
+          if(['before','after'].includes(saved.privateContent?.basis))basis=saved.privateContent.basis;
+          lastSubmitted=/^\d+:[a-f0-9]{1,8}$/.test(saved.privateContent?.lastSubmitted??'')?saved.privateContent.lastSubmitted:'';
+          if(lastSubmitted===signature())elements.message.textContent='Lote enviado para processamento; a publicação será confirmada após o deploy.';
+        }
+        render();
+      }
+      elements.tiers.addEventListener('click',event=>{const button=event.target.closest('button[data-id]');if(!button||!byId.has(button.dataset.id))return;selectedId=button.dataset.id;root.querySelectorAll('[data-id]').forEach(item=>item.setAttribute('aria-pressed',String(item.dataset.id===selectedId)));renderDetail();persist();});
+      basisButtons.forEach(button=>button.addEventListener('click',()=>{basis=button.dataset.basis;renderTier();persist();}));
+      decisionButtons.forEach(button=>button.addEventListener('click',()=>{choices[selectedId].decision=button.dataset.decision;lastSubmitted='';elements.message.textContent='Escolhas salvas; publicação após envio do lote e validação.';render();persist();}));
+      elements.feedback.addEventListener('input',()=>{choices[selectedId].feedback=elements.feedback.value.slice(0,120);lastSubmitted='';renderDetail();persist();});
+      root.querySelectorAll('[data-high]').forEach(button=>button.addEventListener('click',async()=>{
+        if(typeof window.openai?.sendFollowUpMessage!=='function'){elements.message.textContent='Inspeção em alta indisponível nesta prévia; peça a imagem pelo identificador no chat.';return;}
+        const item=byId.get(selectedId);const side=button.dataset.high;
+        try{await window.openai.sendFollowUpMessage({prompt:'Mostre em resolução integral, sem aprovar ou publicar: '+JSON.stringify({review:'ss-photo-review',id:item.id,version:item.version,hash:item.hash,side}),title:'Examinar '+item.short+' em alta'});}
+        catch{elements.message.textContent='O pedido de inspeção não foi enviado; suas escolhas continuam salvas.';}
+      }));
+      elements.submit.addEventListener('click',async()=>{
+        const batch=payload();if(!batch.decisions.length||busy)return;
+        if(typeof window.openai?.sendFollowUpMessage!=='function'){elements.message.textContent='Envio pelo painel indisponível nesta prévia; suas escolhas continuam salvas.';return;}
+        busy=true;renderDetail();
+        try{
+          const sent=JSON.stringify(batch);
+          await window.openai.sendFollowUpMessage({prompt:'Aplicar este lote da revisão fotográfica: validar IDs, versões e hashes contra outputs/photo-review/manifest.json; publicar somente as decisões approve, gerar novas versões somente para redo usando original e feedback acumulado, e manter as demais pendentes. Seguir scripts/photo-review.README.md. Decisões explícitas do lote: '+sent,title:'Enviar lote de imagens para publicação e novas tentativas'});
+          lastSubmitted=signature();elements.message.textContent='Lote enviado para processamento; a publicação será confirmada após o deploy.';persist();
+        }catch{elements.message.textContent='O lote não foi enviado; as escolhas estão preservadas para tentar novamente.';}
+        finally{busy=false;renderDetail();}
+      });
+      restore(window.openai?.widgetState);
+      window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals&&'widgetState' in event.detail.globals)restore(event.detail.globals.widgetState);});
+    })();
+  </script>
+</div>

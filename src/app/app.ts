@@ -5,6 +5,8 @@ import { whatsappUrl } from './shared/contact';
 import { StudioLogo } from './shared/studio-logo';
 import { ROOM_PROJECTS } from './quarto-project/room-project-data';
 import { LIVING_PROJECTS } from './quarto-project/living-project-data';
+import { projectPhoto, approvedAreaGourmetPhotos } from './shared/project-photo';
+import { APPROVED_PHOTO_ASSETS } from './shared/approved-photo-assets';
 
 interface Collection {
   readonly slug: string;
@@ -33,12 +35,13 @@ interface ProjectImage {
   styleUrl: './app.css',
 })
 export class App {
+  protected readonly photo = projectPhoto;
   protected readonly roomProjects = { ...ROOM_PROJECTS, ...LIVING_PROJECTS };
   protected readonly menuOpen = signal(false);
   protected readonly activeProject = signal<Collection | null>(null);
   protected readonly whatsappHref = computed(() => whatsappUrl(this.activeProject()?.title));
 
-  protected readonly collections: readonly Collection[] = [
+  protected readonly collections: readonly Collection[] = ([
     {
       slug: 'quarto-antonio-catarina',
       title: 'Antonio e Catarina',
@@ -104,7 +107,13 @@ export class App {
       crop: 'gabi-juju',
       gallery: [{ image: 'images/projetos/projeto-quarto-infantil.png', alt: 'Render de quarto infantil com bancada de estudos, espelhos e papel de parede floral.', caption: 'Quarto infantil · Projeto de interiores' }],
     },
-  ];
+  ] satisfies readonly Collection[]).map((collection): Collection => {
+    if (collection.slug !== 'area-gourmet-apto-401') return collection;
+    const gallery = approvedAreaGourmetPhotos();
+    if (!gallery.length) return collection;
+    const cover = APPROVED_PHOTO_ASSETS['area-gourmet-apto-401/vista-1'];
+    return { ...collection, gallery, image: cover ?? collection.image, crop: cover ? 'local-render' : collection.crop };
+  });
 
   constructor() {
     this.syncProjectFromPath();

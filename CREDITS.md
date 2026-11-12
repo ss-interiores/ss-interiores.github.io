@@ -35,3 +35,7 @@ As fotografias usadas nesta primeira versão foram baixadas do Unsplash e estão
 - [Arquitetura](https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3) — imagem `photo-1600566753190-17f0baa2a6c3`
 - [Poltrona](https://images.unsplash.com/photo-1618221195710-dd6b41faaea6) — imagem `photo-1618221195710-dd6b41faaea6`
 - [Dormitório](https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a) — imagem `photo-1616486029423-aaa4789e8c9a`
+
+## Versões fotográficas com IA
+
+Os arquivos de `public/images/projetos/aprovadas/` são versões dos renders do estúdio transformadas com a ferramenta integrada imagegen para obter aparência fotográfica, mantendo o projeto como referência. Cada versão publicada passa por seleção humana; os originais e o histórico de prompts e decisões permanecem no acervo local de revisão.

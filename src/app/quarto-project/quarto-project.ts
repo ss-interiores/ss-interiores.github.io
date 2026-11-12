@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostListener, ViewChild, computed, effect, input, signal } from '@angular/core';
 import { Icon } from '../shared/icon';
 import { RoomProjectData } from './room-project-data';
+import { projectPhoto } from '../shared/project-photo';
 
 @Component({
   selector: 'app-quarto-project',
@@ -29,7 +30,7 @@ export class QuartoProject {
   }
 
   protected image(view: number): string {
-    return `images/projetos/${this.project().slug}/vista-${view}.png`;
+    return projectPhoto(`images/projetos/${this.project().slug}/vista-${view}.png`);
   }
 
   protected openImage(index: number, event: MouseEvent): void {
