@@ -4,8 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build:pages": "ng build --base-href / && node scripts/create-route-pages.mjs",
+    "images": "node scripts/optimize-images.mjs",
+    "build": "node scripts/optimize-images.mjs && ng build",
+    "build:pages": "node scripts/optimize-images.mjs && ng build --base-href / && node scripts/create-route-pages.mjs",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,
@@ -22,7 +23,9 @@
     "@angular/build": "^21.2.0",
     "@angular/cli": "^21.2.0",
     "@angular/compiler-cli": "^21.2.0",
+    "esbuild": "^0.28.1",
     "prettier": "^3.8.1",
+    "sharp": "^0.35.5",
     "typescript": "~5.9.2"
   }
 }

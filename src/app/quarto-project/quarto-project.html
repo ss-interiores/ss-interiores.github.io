@@ -14,7 +14,7 @@
     </div>
     <figure class="hero-figure">
       <button type="button" (click)="openImage(0, $event)" aria-label="Ampliar imagem principal">
-        <img [src]="image(gallery[0].view)" [alt]="gallery[0].alt" fetchpriority="high" [attr.width]="project().imageWidth ?? 1080" [attr.height]="project().imageHeight ?? 1080" />
+        <img [appPhoto]="image(gallery[0].view)" [photoSizes]="sizes.roomHero" [alt]="gallery[0].alt" fetchpriority="high" />
         <span class="image-expand"><app-icon name="maximize" /></span>
       </button>
       <figcaption><span>{{ project().name }}</span><span>{{ project().coverCaption }}</span></figcaption>
@@ -39,7 +39,7 @@
       @for (item of gallery; track item.view; let index = $index) {
         <figure [class.gallery-wide]="index === 0 || index === 5">
           <button type="button" (click)="openImage(index, $event)" [attr.aria-label]="'Ampliar: ' + item.title">
-            <img [src]="image(item.view)" [alt]="item.alt" loading="lazy" [attr.width]="project().imageWidth ?? 1080" [attr.height]="project().imageHeight ?? 1080" />
+            <img [appPhoto]="image(item.view)" [photoSizes]="index === 0 || index === 5 ? sizes.fullWidth : sizes.roomGallery" [alt]="item.alt" loading="lazy" decoding="async" />
             <span class="image-expand"><app-icon name="maximize" /></span>
           </button>
           <figcaption><div><span class="image-number">0{{ index + 1 }}</span><span>{{ item.title }}</span></div><span class="image-detail">{{ item.detail }}</span></figcaption>
@@ -72,5 +72,5 @@
 </main>
 
 <dialog #viewer class="image-viewer" [attr.aria-label]="'Galeria do projeto ' + project().name" (click)="backdrop($event)" (close)="restoreFocus()">
-  <div class="viewer-content"><div class="viewer-top"><span>{{ project().name }} <span class="viewer-counter">/ {{ selected() + 1 }} de {{ gallery.length }}</span></span><button type="button" autofocus aria-label="Fechar imagem" (click)="closeImage()"><app-icon name="close" /></button></div><div class="viewer-image"><button type="button" class="viewer-prev" aria-label="Imagem anterior" (click)="step(-1)"><app-icon name="chevron-left" /></button><img [src]="image(selectedImage().view)" [alt]="selectedImage().alt" [attr.width]="project().imageWidth ?? 1080" [attr.height]="project().imageHeight ?? 1080" /><button type="button" class="viewer-next" aria-label="Próxima imagem" (click)="step(1)"><app-icon name="chevron-right" /></button></div><div class="viewer-bottom"><span>{{ selectedImage().title }}</span></div></div>
+  <div class="viewer-content"><div class="viewer-top"><span>{{ project().name }} <span class="viewer-counter">/ {{ selected() + 1 }} de {{ gallery.length }}</span></span><button type="button" autofocus aria-label="Fechar imagem" (click)="closeImage()"><app-icon name="close" /></button></div><div class="viewer-image"><button type="button" class="viewer-prev" aria-label="Imagem anterior" (click)="step(-1)"><app-icon name="chevron-left" /></button><img [appPhoto]="image(selectedImage().view)" [photoSizes]="sizes.viewer" photoReveal="false" [alt]="selectedImage().alt" loading="lazy" decoding="async" /><button type="button" class="viewer-next" aria-label="Próxima imagem" (click)="step(1)"><app-icon name="chevron-right" /></button></div><div class="viewer-bottom"><span>{{ selectedImage().title }}</span></div></div>
 </dialog>

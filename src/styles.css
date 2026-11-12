@@ -66,6 +66,27 @@ img {
   max-width: 100%;
 }
 
+/* Responsive renders (img[appPhoto]): the frame shows a blurred preview until the image is ready. */
+img.photo-pending {
+  opacity: 0;
+}
+
+img.photo-ready {
+  animation: photo-reveal 0.45s ease-out;
+}
+
+@keyframes photo-reveal {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img.photo-ready {
+    animation: none;
+  }
+}
+
 ::selection {
   background: #d5c3a9;
   color: #1d1d1a;

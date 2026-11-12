@@ -37,7 +37,7 @@
 
       <section class="project-detail-hero" aria-labelledby="project-detail-title">
         <figure class="project-detail-cover">
-          <img [src]="photo(project.image)" [alt]="project.imageAlt" />
+          <img [appPhoto]="photo(project.image)" [photoSizes]="sizes.detailCover" [alt]="project.imageAlt" fetchpriority="high" />
         </figure>
         <div class="project-detail-copy">
           <p class="eyebrow"><span class="eyebrow-dot"></span> {{ project.category }}</p>
@@ -59,7 +59,7 @@
         <div class="project-gallery-grid" [class.single-image]="project.gallery.length === 1">
           @for (image of project.gallery; track image.image) {
             <figure class="project-gallery-image">
-              <img [src]="photo(image.image)" [alt]="image.alt" />
+              <img [appPhoto]="photo(image.image)" [photoSizes]="project.gallery.length === 1 ? sizes.fullWidth : sizes.detailGallery" [alt]="image.alt" loading="lazy" decoding="async" />
               <figcaption>{{ image.caption }}</figcaption>
             </figure>
           }
@@ -76,7 +76,7 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
-        <img [src]="photo('images/projetos/cobertura-gourmet-jessica-gabriel/vista-1.png')" alt="" />
+        <img [appPhoto]="heroPhoto" [photoSizes]="sizes.homeHero" alt="" fetchpriority="high" />
       </div>
       <div class="hero-topline">
         <p class="eyebrow light-eyebrow"><span class="eyebrow-dot"></span> Interiores com intenção</p>
@@ -102,7 +102,7 @@
         <a class="text-link" href="#sobre">Conheça o estúdio <app-icon name="chevron-right" /></a>
       </div>
       <figure class="project-image intro-image" aria-label="Render do projeto de sala de estar e jantar">
-        <img [src]="photo('images/projetos/sala-estar-jantar-jessica-gabriel/vista-1.png')" alt="Sala de estar e jantar de Jéssica e Gabriel com mesa de jantar, poltronas marrons e espelho orgânico." />
+        <img [appPhoto]="photo('images/projetos/sala-estar-jantar-jessica-gabriel/vista-1.png')" [photoSizes]="sizes.homeFeature" loading="lazy" decoding="async" alt="Sala de estar e jantar de Jéssica e Gabriel com mesa de jantar, poltronas marrons e espelho orgânico." />
         <figcaption>Jéssica e Gabriel · Sala de estar e jantar</figcaption>
       </figure>
     </section>
@@ -134,7 +134,7 @@
         <a class="dark-button" [href]="whatsappHref()" target="_blank" rel="noreferrer">Conte sua ideia</a>
       </div>
       <figure class="project-image studio-image" aria-label="Render de projeto de quarto infantil">
-        <img [src]="photo('images/projetos/quarto-gabi-juju/vista-2.png')" alt="Render do quarto Gabi e Juju com bancada para duas, espelhos redondos e papel de parede floral." />
+        <img [appPhoto]="photo('images/projetos/quarto-gabi-juju/vista-2.png')" [photoSizes]="sizes.homeFeature" loading="lazy" decoding="async" alt="Render do quarto Gabi e Juju com bancada para duas, espelhos redondos e papel de parede floral." />
         <figcaption>Projeto de interiores · Gabi e Juju</figcaption>
       </figure>
     </section>
@@ -156,7 +156,7 @@
           <a class="collection-card" [attr.data-motif]="collection.motif" [attr.href]="'/projetos/' + collection.slug" (click)="openProject($event, collection)">
             <span class="collection-summary">
               <span [class]="'collection-photo ' + collection.crop">
-                <img [src]="photo(collection.image)" [alt]="collection.imageAlt" />
+                <img [appPhoto]="photo(collection.image)" [photoSizes]="sizes.collectionCard" [alt]="collection.imageAlt" loading="lazy" decoding="async" />
               </span>
               <span class="collection-caption">
                 <span class="collection-category">{{ collection.category }}</span>

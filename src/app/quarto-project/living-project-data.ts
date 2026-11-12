@@ -4,7 +4,7 @@ export const LIVING_PROJECTS: Readonly<Partial<Record<string, RoomProjectData>>>
   'sala-estar-jantar-jessica-gabriel': {
     slug: 'sala-estar-jantar-jessica-gabriel', firstName: 'Sala de estar', secondName: 'e jantar', joiner: '',
     name: 'Sala de estar e jantar · Jéssica e Gabriel', category: 'Sala de estar e jantar', compactTitle: true,
-    tags: ['Jéssica e Gabriel', 'Projeto de interiores'], imageWidth: 1920, imageHeight: 1080,
+    tags: ['Jéssica e Gabriel', 'Projeto de interiores'],
     kicker: 'Jéssica e Gabriel · A casa em companhia',
     lede: ['Conversas que se estendem,', 'um lugar para desacelerar.'],
     summary: 'Estar e jantar compartilham um ambiente de tons suaves, madeira e detalhes pretos. A marcenaria aproveita o espaço sob a escada, enquanto o canto de leitura recebe a luz da janela.',
@@ -46,7 +46,7 @@ export const LIVING_PROJECTS: Readonly<Partial<Record<string, RoomProjectData>>>
   'cobertura-gourmet-jessica-gabriel': {
     slug: 'cobertura-gourmet-jessica-gabriel', firstName: 'Cobertura', secondName: 'gourmet', joiner: '',
     name: 'Cobertura gourmet · Jéssica e Gabriel', category: 'Cobertura gourmet',
-    tags: ['Jéssica e Gabriel', 'Projeto de interiores'], imageWidth: 1920, imageHeight: 1080,
+    tags: ['Jéssica e Gabriel', 'Projeto de interiores'],
     kicker: 'Jéssica e Gabriel · Receber ao ar livre',
     lede: ['Cozinhar, reunir, aproveitar.', 'A casa se abre para os encontros.'],
     summary: 'Uma cobertura que aproxima preparo e convivência: bancada em L, churrasqueira, madeira e esquadrias pretas organizam um ambiente aberto, com áreas de apoio e descanso.',
